@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Reģistrācijas forma</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> -->
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Reģistrācijas forma</a>
+                  <a class="nav-link" href="#">Mans CV</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main id="main">
+        <div class="container">
+            <h1>Reģistrācijas forma</h1>
+                <form method="get"></form>
+                    <div class="container">
+                        <fieldset>
+                            <label for="name">Vārds:</label>                    
+                            <input type="text" id="name">
+                            <label for="password">Ievadiet paroli:</label>
+                            <input type="password" id="password">
+                        </fieldset>
+                    </div>
+                    <div class="container">
+                        <fieldset>
+                            <legend>Informācija par sevi</legend>
+                            <p style="font-weight: bold">Dzimums</p>
+                            <input type="radio" name="dzimums" id="male">
+                            <label for="male">Vīrietis</label>
+                            <input type="radio" name="dzimums" id="female">
+                            <label for="female">Sieviete</label>
+                            <br><br>
+                            <label for="date"> Dzimšanas datums:</label>
+                            <input type="date" id="date">
+                            <p style="font-weight: bold">Adrese</p>
+                            <label for="address">Jūsu pilsēta:</label>
+                            <select id="address">
+                                <option value="Izvēlies">Izvēlies</option>
+                                <option value="Rīga">Rīga</option>
+                                <option value="Ventspils">Ventspils</option>
+                                <option value="Liepāja">Liepāja</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div class="container">
+                        <fieldset>
+                            <legend>Jūsu hobiji</legend>
+                            <p>Izvēlēties hobijus no saraksta</p>
+                            <input type="checkbox" name="hobiji">
+                            <label for="">Ceļojumi</label>
+                            <input type="checkbox" name="hobiji">
+                            <label for="">Programmēšana</label>
+                            <input type="checkbox" name="hobiji">
+                            <label for="">Zīmēšana</label>
+                            <input type="checkbox" name="hobiji">
+                            <label for="">Mūzikas instrumenti</label>
+                        </fieldset>
+                    </div>
+                    <div class="container">
+                        <fieldset>
+                            <legend>Pastāstiet mums par sevi</legend>
+                            <textarea placeholder="Vieta Jūsu aprakstam" id="textarea"></textarea>
+                        </fieldset>
+                    </div>
+                    <button type="submit" onclick="" class="btn btn-primary">Sūtīt</button>
+                </form>
+        </div>
+    </main>
+</body>
+</html>

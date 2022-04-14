@@ -1,0 +1,30 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+html, body{
+    font-family: sans-serif !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	/* background-color: #CCCCCC; */
+	min-height: 100%;
+	position: relative;
+	padding-bottom: [footer-height]
+}
+
+.container{
+    margin: 20px 0;
+}
+
+#textarea{
+    width: 400px;
+    height: 100px;
+}
