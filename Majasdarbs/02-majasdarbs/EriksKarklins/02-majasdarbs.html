@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>2-mājasdarbs</title>
+    </head>
+<body>
+    <main id="main">
+     <form action="/uz apkopojumu.php">
+        <div>
+            <H2>Reģistrācijas forma</H2>
+              <p style="border:1px; border-style:solid; border-color:#000000; padding: 1em;" 
+              <form action="" method="get">
+                        <label>Ievieto vārdu:</label>
+                        <input type="text"/>
+                        <lable>Ievieto paroli:</lable>
+                        <input type="password"/>
+              </form>
+              </p> 
+        </div>
+        <div>
+            <fieldset style="border:1px; border-style:solid; border-color:#000000; padding:1em;">
+                <legend>
+                    <mark>Informācija par sevi</mark>
+                </legend>
+                    <h4>Dzimums</h4>
+                    <p><form action="" method="get">
+                            <input type="radio"/>
+                            <label>vīrietis</label>
+                            <br>
+                            <input type="radio"/>
+                            <lable>sieviete</lable>
+                               <br></p>	
+                            <label>dzimšanas datums</label>
+                            <input type="date">
+                        </form>
+                     <h4>Adrese</h4>
+                              <label>Jūsu pilsēta:</label>
+                              <select name="Pilsētas" id="Pilsētas">
+                            <option>Rīga</option>
+                            <option>Jelgava</option>
+                              </select>
+            </fieldset>
+        </div>  
+        <br>
+        <div>
+            <fieldset style="border:1px; border-style:solid; border-color:#000000; padding:1em;">
+                <legend>
+                    <mark>Jūsu hobiji</mark>
+                </legend>
+                    <p4>Jūs varat izvēlēties jebkuru hobiju skaitu</p4>
+                    <p><form action="" method="get">
+                            <input type="checkbox"/>
+                            <label>Ceļojums</label>
+                            <input type="checkbox"/>
+                            <label>Programēšana</label>
+                        <br>	
+                            <input type="checkbox"/>
+                            <label>Zīmēt</label>
+                            <input type="checkbox"/>
+                            <label>Spēlēt mūzikas instrumentus</label>
+                        </form>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <fieldset style="border:1px; border-style:solid; border-color:#000000; padding:1em;">
+                <legend>
+                    <mark>Savs laukums</mark>
+                </legend>
+                   <span title="Dotais būs noderīgs">vēlos zināt vairāk</span>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+		    <input type="submit" value="Sūtīt">
+		</form>
+    </main>
+</body>
+</html>
