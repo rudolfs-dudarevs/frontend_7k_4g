@@ -6,75 +6,67 @@
     </head>
 <body>
     <main id="main">
-     <form action="/uz apkopojumu.php">
-        <div>
-            <H2>Reģistrācijas forma</H2>
-              <p style="border:1px; border-style:solid; border-color:#000000; padding: 1em;" 
-              <form action="" method="get">
-                        <label>Ievieto vārdu:</label>
-                        <input type="text"/>
-                        <lable>Ievieto paroli:</lable>
-                        <input type="password"/>
-              </form>
-              </p> 
-        </div>
-        <div>
+        <H2>Reģistrācijas forma</H2>
+        <form action="" method="get">
+            <fieldset style="border:1px; border-style:solid; border-color:#000000; padding: 1em;">
+                        <label for="Vards">Ievieto vārdu: </label>
+                        <input type="text" id="Vārds" name="Vārds">
+                        <label for="parole">Ievieto paroli: </label>
+                        <input type="pasword" id="parole" name="parole">
+            </fieldset> 
+            <br>
             <fieldset style="border:1px; border-style:solid; border-color:#000000; padding:1em;">
                 <legend>
                     <mark>Informācija par sevi</mark>
                 </legend>
                     <h4>Dzimums</h4>
-                    <p><form action="" method="get">
-                            <input type="radio"/>
-                            <label>vīrietis</label>
-                            <br>
-                            <input type="radio"/>
-                            <lable>sieviete</lable>
-                               <br></p>	
-                            <label>dzimšanas datums</label>
-                            <input type="date">
-                        </form>
+                        <input type="radio" id="vīrietis" name="vīrietis">
+                        <label for="vīrietis">vīrietis </label>
+                        <br>
+                        <input type="radio" id="sieviete" name="sieviete">
+                        <label for="sieviete">sieviete </label>
+                        <br>
+                        <br>
+                        <label for="Dzimšanas datums" >dzimšanas datums</label>
+                        <input type="date" id="Dzimšanas datums" name="Dzimšanas datums">
                      <h4>Adrese</h4>
-                              <label>Jūsu pilsēta:</label>
-                              <select name="Pilsētas" id="Pilsētas">
+                        <label for="pilsēta">Jūsu pilsēta:</label>
+                        <select name="Pilsētas" id="Pilsētas">
                             <option>Rīga</option>
                             <option>Jelgava</option>
-                              </select>
+                            <option>Cits</option>
+                        </select>
             </fieldset>
-        </div>  
         <br>
-        <div>
             <fieldset style="border:1px; border-style:solid; border-color:#000000; padding:1em;">
                 <legend>
                     <mark>Jūsu hobiji</mark>
                 </legend>
                     <p4>Jūs varat izvēlēties jebkuru hobiju skaitu</p4>
-                    <p><form action="" method="get">
-                            <input type="checkbox"/>
-                            <label>Ceļojums</label>
-                            <input type="checkbox"/>
-                            <label>Programēšana</label>
+                    <br>
+                    <br>
+                        <input type="checkbox" id="ceļojums" name="ceļojums"/>
+                        <label for=Ceļojums>Ceļojums</label>
+                        <input type="checkbox" id="programēšana" name="programēšana"/>
+                        <label for=programēšana>Programēšana</label>
                         <br>	
-                            <input type="checkbox"/>
-                            <label>Zīmēt</label>
-                            <input type="checkbox"/>
-                            <label>Spēlēt mūzikas instrumentus</label>
-                        </form>
+                        <input type="checkbox" id="Zīmēt" name="Zīmēt"/>
+                        <label for=zīmēt>Zīmēt</label>
+                        <input type="checkbox" id="spēlēt" name="spēlēt"/>
+                        <label for=spēlēt>Spēlēt mūzikas instrumentus</label>
             </fieldset>
-        </div>
         <br>
-        <div>
             <fieldset style="border:1px; border-style:solid; border-color:#000000; padding:1em;">
                 <legend>
-                    <mark>Savs laukums</mark>
+                    <mark>CV</mark>
                 </legend>
-                   <span title="Dotais būs noderīgs">vēlos zināt vairāk</span>
+                <label for=CV><span title="visa tipa faili"> Augšupielādēt CV</span></label>
+                <input type="file" id="CV" name="CV"/>
             </fieldset>
-        </div>
         <br>
-        <div>
 		    <input type="submit" value="Sūtīt">
 		</form>
     </main>
 </body>
 </html>
+
