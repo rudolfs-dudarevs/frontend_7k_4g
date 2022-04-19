@@ -9,10 +9,8 @@
         <H2>Reģistrācijas forma</H2>
         <form action="" method="get">
             <fieldset style="border:1px; border-style:solid; border-color:#000000; padding: 1em;">
-                        <label for="Vards">Ievieto vārdu: </label>
-                        <input type="text" id="Vārds" name="Vārds">
-                        <label for="parole">Ievieto paroli: </label>
-                        <input type="pasword" id="parole" name="parole">
+                        Ievieto vārdu:<input type="text" name="Vārds" required>
+                        Ievietot paroli: <input type="pasword"  name="parole" required>
             </fieldset> 
             <br>
             <fieldset style="border:1px; border-style:solid; border-color:#000000; padding:1em;">
@@ -20,22 +18,20 @@
                     <mark>Informācija par sevi</mark>
                 </legend>
                     <h4>Dzimums</h4>
-                        <input type="radio" id="vīrietis" name="vīrietis">
-                        <label for="vīrietis">vīrietis </label>
+                     <input type="radio" name="dzimums" value="Vīrietis" required> vīrietis
                         <br>
-                        <input type="radio" id="sieviete" name="sieviete">
-                        <label for="sieviete">sieviete </label>
+                     <input type="radio" name="dzimums" value="Sieviete" required> sieviete
                         <br>
                         <br>
                         <label for="Dzimšanas datums" >dzimšanas datums</label>
-                        <input type="date" id="Dzimšanas datums" name="Dzimšanas datums">
+                        <input type="date" name="Dzimšanas datums" required>
                      <h4>Adrese</h4>
-                        <label for="pilsēta">Jūsu pilsēta:</label>
-                        <select name="Pilsētas" id="Pilsētas">
+                        Jūsu pilsēta <input list="Pilseta" name="Pilsēta" required>
+                        <datalist id="Pilseta">
                             <option>Rīga</option>
                             <option>Jelgava</option>
                             <option>Cits</option>
-                        </select>
+                        </datalist>
             </fieldset>
         <br>
             <fieldset style="border:1px; border-style:solid; border-color:#000000; padding:1em;">
@@ -45,15 +41,16 @@
                     <p4>Jūs varat izvēlēties jebkuru hobiju skaitu</p4>
                     <br>
                     <br>
-                        <input type="checkbox" id="ceļojums" name="ceļojums"/>
-                        <label for=Ceļojums>Ceļojums</label>
-                        <input type="checkbox" id="programēšana" name="programēšana"/>
-                        <label for=programēšana>Programēšana</label>
-                        <br>	
-                        <input type="checkbox" id="Zīmēt" name="Zīmēt"/>
-                        <label for=zīmēt>Zīmēt</label>
-                        <input type="checkbox" id="spēlēt" name="spēlēt"/>
-                        <label for=spēlēt>Spēlēt mūzikas instrumentus</label>
+                    <table>
+                        <tr>
+                        <td><input type="checkbox" name="ceļojums"> Ceļojums</td>
+                        <td><input type="checkbox" name="programēšana"> Programēšana</td>
+                        </tr>
+                     	<tr>
+                        <td><input type="checkbox" name="Zīmēt"> Zīmēt</td>
+                        <td><input type="checkbox" name="spēlēt"> Spēlēt mūzikas instrumentus</td>
+                         </tr>
+                    </table>
             </fieldset>
         <br>
             <fieldset style="border:1px; border-style:solid; border-color:#000000; padding:1em;">
@@ -61,7 +58,7 @@
                     <mark>CV</mark>
                 </legend>
                 <label for=CV><span title="visa tipa faili"> Augšupielādēt CV</span></label>
-                <input type="file" id="CV" name="CV"/>
+                <input type="file" name="CV"/>
             </fieldset>
         <br>
 		    <input type="submit" value="Sūtīt">
@@ -69,4 +66,3 @@
     </main>
 </body>
 </html>
-
