@@ -11,9 +11,9 @@
         <form>
             <fieldset>
                 <label for="name">Vārds:</label>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name" style="width: 135px" required >
                 <label for="password">Parole:</label>
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="password" id="password" style="width: 135px" required>
             </fieldset>
             <br>
             <fieldset>
@@ -48,7 +48,7 @@
                 <br>
                 <div>
                     <label for="city">Jūsu pilsēta</label>
-                    <input type="list" name="city" id="city" required> 
+                    <input type="list" name="city" id="city" style="width: 135px" required> 
                 </div>
             </fieldset>
             <br>
@@ -56,30 +56,51 @@
                 <legend>
                     <mark>Jūsu hobiji</mark>  
                 </legend>
-                <label>Jūs varat izvēlēties jebkuru hobiju skaitu</label>
-                <br>
-                <label>
-                    <input type="checkbox" name="hobbies">Ceļojumi
-                </label>
-                <label>
-                    <input type="checkbox" name="hobbies">Programmēšana
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="hobbies">Zīmēt
-                </label>
-                <label>
-                    <input type="checkbox" name="hobbies">Spēlēt mūzikas instrumentus
-                </label>
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jūs varat izvēlēties jebkuru hobiju skaitu</label>
+                <!--kā bez css uztaisīt šo atkāpi?-->
+                <table>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="hobbies">Ceļojumi
+                            </label>                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="hobbies">Programmēšana
+                            </label>
+                        </td>
+                </table>
+                <table width="370px">
+                        <td>
+                            <label>
+                                <input type="checkbox" name="hobbies">Zīmēt
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="hobbies">Spēlēt mūzikas instrumentus
+                            </label>
+                        </td>
+                    </tr>    
+                </table>        
             </fieldset>
             <br>
             <fieldset>
                 <legend>
-                    <mark>Savs laukums</mark>
+                    <mark>Ko Jūs vēlētos pastāstīt par sevi?</mark>
                 </legend>
+                <textarea id="aboutyou" name="aboutyou" placeholder="Par Jums" style="width: 225px; height: 100px"></textarea>
             </fieldset>
             <br>
+            <hr>
+            <div>
+            <label>
+                Piekrītu datu apstrādei.<input type="checkbox" name="accept" required>
+            </label>
+            </div>
+            <br>
             <button type="submit">Sūtīt</button>
+            <button type="reset">Attīrīt</button>
             <!-- <input type="submit" value="Sūtīt"> -->
             </form>
     </body>
