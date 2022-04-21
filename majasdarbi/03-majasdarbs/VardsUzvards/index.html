@@ -6,23 +6,23 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#work-experience">
+        <nav class="header">
+            <a class="header__link" href="#work-experience">
                 Work experience
             </a>
-            <a href="#education">
+            <a class="header__link" href="#education">
                 Education
             </a>
-            <a href="#skills">
+            <a class="header__link" href="#skills">
                 Skills
             </a>
-            <a href="#faq">
+            <a class="header__link" href="#faq">
                 FAQ
             </a>
-            <a href="#languages">
+            <a class="header__link" href="#languages">
                 Languages
             </a>
-            <a href="#contactme">
+            <a class="header__link" href="#contactme">
                 Contact me
             </a>
         </nav>
@@ -30,20 +30,20 @@
 
     <main>
         <!-- ABOUT ME -->
-        <section>
-            <div>
+        <section class="about-me">
+            <div class="about-me__hero">
                 <div>
-                    <p>
+                    <p class="about-me__pre-title">
                         FRONTEND DEVELOPER
                     </p>
-                    <h1>Rudolfs Dudarevs</h1>
+                    <h1 class="about-me__title">Rudolfs Dudarevs</h1>
                 </div>
-                <img src="profileImg.jpeg" alt="profileImg" width="100px" height="100px">
+                <img class="about-me__image" src="images/profileImg.jpeg" alt="profileImg" width="100px" height="100px">
             </div>
-            <div>
-                <a href="mailto:rudolf.dudarevs@gmail.com">rudolf.dudarevs@gmail.com</a>
-                <a href="https://www.linkedin.com/in/rudolfs-dudarevs-509323167/" target="_blank">LinkedIn</a>
-                <a href="#contactme">contact me</a>
+            <div class="about-me__contacts">
+                <a class="about-me__link" href="mailto:rudolf.dudarevs@gmail.com">rudolf.dudarevs@gmail.com</a>
+                <a class="about-me__link" href="https://www.linkedin.com/in/rudolfs-dudarevs-509323167/" target="_blank">LinkedIn</a>
+                <a class="about-me__contact-btn" href="#contactme">contact me</a>
             </div>
         </section>
         <!-- /ABOUT ME -->
@@ -51,27 +51,27 @@
         <!-- WORK EXPERIENCE -->
         <section id="work-experience">
             <h2>Work experience</h2>
-            <div>
+            <div class="work-experience__item">
                 <h3>Neotech Development – Frontend developer</h3>
                 <h4>08/2020 – present</h4>
-                <p>AngularJS, Angular 2+, Cordova, LESS</p>
+                <p class="work-experience__tools">AngularJS, Angular 2+, Cordova, LESS</p>
                 <ul>
                     <li>Develop mobile hybrid application and new features.</li>
                 </ul>
             </div>
-            <div>
+            <div class="work-experience__item">
                 <h3>Catchbox – Frontend developer, Scrum Master</h3>
                 <h4>02/2019 – 07/2020</h4>
-                <p>Vue, Vuex, Webpack, JavaScript, SCSS, Twig templates</p>
+                <p class="work-experience__tools">Vue, Vuex, Webpack, JavaScript, SCSS, Twig templates</p>
                 <ul>
                     <li>Implement new website front-end architecture and new featureswith reusable components for a custom made CMS.</li>
                     <li>Coordination and lead of agile process. (Scrum master)Maintenance of legacy website.</li>
                 </ul>
             </div>
-            <div>
+            <div class="work-experience__item">
                 <h3>Accenture – Fullstack developer, Mentor</h3>
                 <h4>02/2016 – 07/2019</h4>
-                <p>React, Redux, Node.js, MongoDB, JavaScript, Backbone, jQuery, SCSS</p>
+                <p class="work-experience__tools">React, Redux, Node.js, MongoDB, JavaScript, Backbone, jQuery, SCSS</p>
                 <ul>
                     <li>FE developer in a UX research and development team.</li>
                     <li>Responsible for feature implementation in both new and legacy large-scale projects.</li>
@@ -131,17 +131,17 @@
         <!-- LANGUAGES -->
 
         <!-- CONTACT FORM -->
-        <section id="contact-me">
+        <section id="contact-me" class="contact-me">
             <h2>Contact me </h2>
 
-            <form action="action_page.php">
-                <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+            <form class="contact-me__form" action="action_page.php">
+                <input class="contact-me__input" type="text" id="firstname" name="firstname" placeholder="Your name..">
 
-                <input type="text" id="company" name="lastname" placeholder="Company name..">
+                <input class="contact-me__input" type="text" id="company" name="lastname" placeholder="Company name..">
             
-                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                <textarea class="contact-me__text-area" id="subject" name="subject" placeholder="Write something.."></textarea>
 
-                <input type="submit" value="Submit">            
+                <input class="contact-me__submit-btn" type="submit" value="Submit">            
               </form>
         </section>
         <!-- CONTACT FORM -->

@@ -1,0 +1,12 @@
+.work-description li {
+    padding: 10px 0px;
+}
+
+.work-experience__tools {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.work-experience__item {
+    margin-bottom: 50px;
+}
