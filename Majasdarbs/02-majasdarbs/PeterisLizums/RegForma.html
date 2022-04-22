@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Reģistrācijas forma</title>
+        <link rel = "icon" href = "icon.png" type = "image/x-icon"/>
+    </head>
+    <body>
+        <h2>Reģistrācijas forma</h2>
+        <form action="" method="get">
+            <fieldset>
+                <label for="name">Ievietot vārdu:</label>
+                <input type="text" name="name" id="name" required>
+                <label for="name">Ievietot paroli:</label>
+                <input type="password" name="password" id="password" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><mark>Informācija par sevi</mark></legend>
+                <h4>Dzimums</h4>
+                <input type="radio" id="male" name="sex" value="male">
+                <label for="male">vīrietis</label>
+                <br>
+                <input type="radio" id="female" name="sex" value="female">
+                <label for="female">sieviete</label>
+                <br>
+                <br>
+                <label for="date">dzimšanas datums</label>   
+                <input type="date" id="birthday" name="birthday">
+                <br>
+                <h4>Adrese</h4>
+                <label for="city">Jūsu pilsēta</label>
+                <input list="cities" name="city" id="city">
+                    <datalist id="cities">
+                        <option value="Ainaži">
+                        <option value="Aizkraukle">
+                        <option value="Aizpute">
+                        <option value="Aknīste">
+                        <option value="Aloja">
+                        <option value="Alūksne">
+                        <option value="Ape">
+                        <option value="Auce">
+                        <option value="Baldone">
+                        <option value="Baloži">
+                        <option value="Balvi">
+                        <option value="Bauska">
+                        <option value="Brocēni">
+                        <option value="Cēsis">
+                        <option value="Cesvaine">
+                        <option value="Dagda">
+                        <option value="Daugavpils">
+                        <option value="Dobele">
+                        <option value="Durbe">
+                        <option value="Grobiņa">
+                        <option value="Gulbene">
+                        <option value="Iecava">
+                        <option value="Ikšķile">
+                        <option value="Ilūkste">
+                        <option value="Jaunjelgava">
+                        <option value="Jēkabpils">
+                        <option value="Jelgava">
+                        <option value="Jūrmala">
+                        <option value="Kandava">
+                        <option value="Kārsava">
+                        <option value="Krāslava">
+                        <option value="Kuldīga">
+                        <option value="Koknese">
+                        <option value="Ķegums">
+                        <option value="Lielvārde">
+                        <option value="Liepāja">
+                        <option value="Līgatne">
+                        <option value="Limbaži">
+                        <option value="Līvāni">
+                        <option value="Lubāna">
+                        <option value="Ludza">
+                        <option value="Madona">
+                        <option value="Mazsalaca">
+                        <option value="Ogre">
+                        <option value="Olaine">
+                        <option value="Pāvilosta">
+                        <option value="Piltene">
+                        <option value="Pļaviņas">
+                        <option value="Preiļi">
+                        <option value="Priekule">
+                        <option value="Rēzekne">
+                        <option value="Rīga">
+                        <option value="Rūjiena">
+                        <option value="Sabile">
+                        <option value="Salacgrīva">
+                        <option value="Salaspils">
+                        <option value="Saldus">
+                        <option value="Saulkrasti">
+                        <option value="Seda">
+                        <option value="Sigulda">
+                        <option value="Skrunda">
+                        <option value="Smiltene">
+                        <option value="Staicele">
+                        <option value="Stende">
+                        <option value="Strenči">
+                        <option value="Subate">
+                        <option value="Talsi">
+                        <option value="Tukums">
+                        <option value="Valdemārpils">
+                        <option value="Valka">
+                        <option value="Valmiera">
+                        <option value="Vangaži">
+                        <option value="Varakļāni">
+                        <option value="Ventspils">
+                        <option value="Viesīte">
+                        <option value="Viļaka">
+                        <option value="Viļāni">
+                        <option value="Zilupe">
+                        <option value="CITA">      
+                    </datalist>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><mark>Jūsu hobiji</mark></legend>
+                <p>Jūs varat izvēlēties jebkuru hobiju skaitu</p>
+                <table style="width:30%">
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="travel" name="travel" value="travel">
+                            <label for="travel">Ceļojumi</label><br>
+                        </td>
+                         <td>
+                            <input type="checkbox" id="progr" name="progr" value="progr">
+                            <label for="progr">Programmēšana</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="draw" name="draw" value="draw">
+                            <label for="draw">Zīmēt</label><br>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="playmusic" name="playmusic" value="playmusic">
+                            <label for="playmusic">Spēlēt mūzikas instrumentus</label><br>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><mark>Savs laukums</mark></legend>
+                <label for="color">Izvēlieties savu mīļāko krāsu</label>
+                <input type="color" id="color" name="color" value="#ff7f2a"><br><br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Nosūtīt">
+        </form>
+    </body>
+</html>
