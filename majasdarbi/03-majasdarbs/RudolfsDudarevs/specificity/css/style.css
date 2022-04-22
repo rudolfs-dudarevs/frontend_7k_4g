@@ -1,0 +1,28 @@
+button {
+    height: 50px;
+    padding: 0 10px;
+    margin: 10px;
+    background-color: lightgreen;
+    color: white;
+    font-weight: bold;
+}
+
+.main-btn {
+    background-color: blueviolet;
+    width: 100px;
+    height: 80px;
+}
+
+#buy-now-btn.main-btn {
+    color: white;
+    font-weight: bold;
+    background-color: red !important;
+}
+
+.special-btn, .main-btn {
+    color: black;
+}
+
+#buy-now-btn:hover {
+    background-color: yellowgreen;
+}
