@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    font-size: 16;
+    height: 100%;
+
+}
+
+button {
+    height: auto;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    background-color: rgb(0, 255, 55);
+}
+.main-btn {
+    background-color: rgb(72, 0, 255)
+}
+
+#buy {
+    background-color: brown;
+    width: 100px;
+    height: auto;
+    border-radius: 15%;
+}
