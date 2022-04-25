@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Forma</title>
+    </head>
+    <body>
+        <h1>Reģistrācijas forma</h1>
+
+        <form action="action_page.php" method="get">
+            <fieldset>
+            <label>Ievietot vārdu:</label>
+            <input type="text"/>
+            <label>Ievietot paroli:</label>
+            <input type="password"/>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>
+                <mark>Informācija par sevi</mark>
+                </legend>
+                <h3>Dzimums</h3>
+         <form>
+            <input type="radio" id="male" name="gender" value="vīrietis">
+            <label for="male">vīrietis</label><br>
+            <input type="radio" id="female" name="gender" value="sieviete">
+            <label for="female">sieviete</label><br>
+            <br/>
+             <label>dzimšanas datums </label><input type="date"/>
+             <br/>
+            <h3>Adrese</h3>
+             <label for="city">Jūsu pilsēta:</label>
+            <input list="cities" name="city" id="city">
+                <datalist id="cities">
+                    <option value="Riga">
+                    <option value="Jelgava">
+                </datalist>
+            </fieldset>
+            <br/>
+                    <fieldset>
+                        <legend>
+                        <mark>Jūsu hobbies</mark>
+                        </legend>
+                        <p>Jūs varat izvēlēties jebkuru hobiju skaitu</p>
+                        <table>
+                            <form action="action_page.php">
+                            <tr>
+                            <td>
+                            <input type="checkbox" id="hobby1" name="hobby1" value="Ceļojumi">
+                              <label for="hobby1"> Ceļojumi</label><br>
+                              <input type="checkbox" id="hobby2" name="hobby2" value="Programmēšana">
+                              <label for="hobby2"> Programmēšana</label><br>
+                           <input type="checkbox" id="hobby3" name="hobby3" value="Zīmēt">
+                              <label for="hobby3"> Zīmēt</label><br>
+                              <input type="checkbox" id="hobby4" name="hobby4" value="Spēlēt mūzikas instrumentus">
+                              <label for="hobby4"> Spēlēt mūzikas instrumentus</label><br>   
+                             </tr>
+                            </td>
+                            </table>
+                        </form>
+                    </fieldset>
+                <br/>
+                <fieldset>
+                <legend>
+                <mark>Jūsu amats</mark>
+                </legend>      
+                </form>
+                <form action="action_page.php">
+                    <label for="education">Izvēlieties profesiju:</label>
+                    <select id="job positions" name="job positions" size="4">
+                      <option value="project manager">Projektu vadītājs</option>
+                      <option value="qa manager">Kvalitātes vadītājs</option>
+                      <option value="programmer">Programmētājs</option>
+                      <option value="marketing manager">Mārketinga vadītājs</option>
+                    </select><br><br>
+                  </form>
+            </fieldset>
+            <br/>
+            <input type="submit" value="Sūtīt">
+    </body>
+</html>
