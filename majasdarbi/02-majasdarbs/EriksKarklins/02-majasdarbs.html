@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>2-mājasdarbs</title>
+    </head>
+<body>
+    <main id="main">
+        <H2>Reģistrācijas forma</H2>
+        <form action="" method="get">
+            <fieldset style="border:1px; border-style:solid; border-color:#000000; padding: 1em;">
+                        Ievieto vārdu:<input type="text" name="Vārds" required>
+                        Ievietot paroli: <input type="pasword"  name="parole" required>
+            </fieldset> 
+            <br>
+            <fieldset style="border:1px; border-style:solid; border-color:#000000; padding:1em;">
+                <legend>
+                    <mark>Informācija par sevi</mark>
+                </legend>
+                    <h4>Dzimums</h4>
+                     <input type="radio" name="dzimums" value="Vīrietis" required> vīrietis
+                        <br>
+                     <input type="radio" name="dzimums" value="Sieviete" required> sieviete
+                        <br>
+                        <br>
+                        <label for="Dzimšanas datums" >dzimšanas datums</label>
+                        <input type="date" name="Dzimšanas datums" required>
+                     <h4>Adrese</h4>
+                        Jūsu pilsēta <input list="Pilseta" name="Pilsēta" required>
+                        <datalist id="Pilseta">
+                            <option>Rīga</option>
+                            <option>Jelgava</option>
+                            <option>Cits</option>
+                        </datalist>
+            </fieldset>
+        <br>
+            <fieldset style="border:1px; border-style:solid; border-color:#000000; padding:1em;">
+                <legend>
+                    <mark>Jūsu hobiji</mark>
+                </legend>
+                    <p4>Jūs varat izvēlēties jebkuru hobiju skaitu</p4>
+                    <br>
+                    <br>
+                    <table>
+                        <tr>
+                        <td><input type="checkbox" name="ceļojums"> Ceļojums</td>
+                        <td><input type="checkbox" name="programēšana"> Programēšana</td>
+                        </tr>
+                     	<tr>
+                        <td><input type="checkbox" name="Zīmēt"> Zīmēt</td>
+                        <td><input type="checkbox" name="spēlēt"> Spēlēt mūzikas instrumentus</td>
+                         </tr>
+                    </table>
+            </fieldset>
+        <br>
+            <fieldset style="border:1px; border-style:solid; border-color:#000000; padding:1em;">
+                <legend>
+                    <mark>CV</mark>
+                </legend>
+                <label for=CV><span title="visa tipa faili"> Augšupielādēt CV</span></label>
+                <input type="file" name="CV"/>
+            </fieldset>
+        <br>
+		    <input type="submit" value="Sūtīt">
+		</form>
+    </main>
+</body>
+</html>
