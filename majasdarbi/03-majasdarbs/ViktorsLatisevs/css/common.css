@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 body {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Staatliches', monospace;
     font-size: 20px;
     color: var(--text-color);
     background-color: var(--main-color);
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Goldman', cursive;
 }
 
 h2 {
     padding: 20px 20px;
     font-size: 2.5em;
     text-align: center;
-    color: var(--accent-color);
+    color: var(--text-color);
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1em;
     padding: 20px 0px;
+    text-align: center;
 }
 h4 {
     font-size: 1.5em;
@@ -30,8 +31,21 @@ h4 {
 
 p {
     color: var(--text-color);
+    text-align: center;
 }
 
 section {
     padding: 0 20% 30px 20%;
 }
+em {
+    color: var(--text-color);
+    text-align: center;
+}
+li {
+    color: var(--text-color);
+    text-align: center; 
+}
+summary {
+    color: var(--text-color);
+    text-align: center;
+}   

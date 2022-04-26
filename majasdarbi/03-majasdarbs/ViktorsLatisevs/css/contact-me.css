@@ -43,7 +43,7 @@
     margin-top: 15px;
     border: 1px solid var(--accent-color);
     border-radius: 5px;
-    padding: 10px 70px;
+    padding: 10px 70px; 
 }
 
 .contact-me__submit-btn:hover {
