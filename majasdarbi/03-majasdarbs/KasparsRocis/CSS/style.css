@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+
+
+body {
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    align-content: center;
+}
+p, ul, hr {
+    margin: 0;
+}
+h1 {
+    font-size: 200%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+hr {
+    border-width: 0;
+}
+section {
+    display: block;
+}
+main {
+    margin: 0 5px;
+}
+.aboutme {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: #f7f7f7;
+    /* margin: 0; */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.description {
+    margin-left:  20px;
+}
+.aboutme-contacts {
+    display: flex;
+    flex-direction: column;
+}
+.aboutme-page, .aboutme-mail, .aboutme-tel, .aboutme-contacts-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+    margin-top: 0px;
+    text-transform: lowercase;
+}
+.aboutme-contacts-btn {
+    margin-top: 0px;
+    border: 4px solid #f26464;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 30px;
+}
+.aboutme-contacts-btn:hover {
+    background: #f26464;
+    color: white;
+}
+.aboutme-contacts a {
+    font-size: 120%;
+}
+img {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+.navigation a:hover {
+    background: #0F2026;
+}
+.navigation.nav-contactme {
+    background:  #F26464; 
+}
+.navigation {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    list-style: none;
+    margin: 0;
+    background: #D9D9D9;
+}
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    margin: 5px;
+    background: #D9D9D9;
+    width: 150px;
+}
+#work-experience {
+    display: block;
+    align-content: center;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20%;
+    padding-right: 20%;   
+}
+#education {
+    display: block;
+    align-content: right;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#skills {
+    display: block;
+    align-content: right;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#languages {
+    display: block;
+    align-content: right;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#faq {
+    display: block;
+    align-content: right;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#contactme {
+    display: block;
+    align-content: center;
+    align-items:center;
+    background: #f7f7f7;
+    width: 200px;
+    margin-top: 60px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.contactme-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
