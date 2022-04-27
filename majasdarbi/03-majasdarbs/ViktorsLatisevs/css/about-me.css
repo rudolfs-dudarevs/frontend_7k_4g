@@ -36,6 +36,7 @@
 .about-me__contacts {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .about-me__link,
@@ -45,7 +46,7 @@
     font-size: 1.5vw;
     color: var(--accent-color);
     text-decoration: none;
-    text-align: left;
+    
 }
 
 .about-me__contact-btn {
