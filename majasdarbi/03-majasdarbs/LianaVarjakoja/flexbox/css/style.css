@@ -10,7 +10,7 @@ body * + * { margin-top: 1.5em;}
   min-height: 500px;
   background-color: grey;
   flex-flow: row wrap; /* sounds right */
-  justify-content: space-around; /* sounds right */
+  justify-content: space-evenly; /* sounds right */
   flex-shrink: 1;
 }
 
@@ -21,23 +21,29 @@ body * + * { margin-top: 1.5em;}
   height: 75px;
   padding: 20px;
   font-size: 30px;
+
+  color: rgb(50 34 88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-around; */
 }
 
 .flex-container .div1 {
-  align-self:center;
+  align-self: center;
   height: 100px;
 }
 .flex-container .div2 {
-  align-self:center;
+  align-self: center;
   height: 50px;
 }
 .flex-container .div3 {
-  align-self:center;
+  align-self: center;
   height: 300px;
 }
 .flex-container .div4 {
-  align-self:center;
+  align-self: center;
 }
 .div5, .div6, .div7 {
-  align-self:flex-end;
+  align-self: flex-end;
 }
