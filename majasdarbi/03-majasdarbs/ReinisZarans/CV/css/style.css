@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family:'Open Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #ADE25E;
+    margin: 0;
+    font-style: normal;
+    }
+.header {
+    padding: 20px 0;
+    background-color: #CFFFB3;
+    display: flex;
+    justify-content: space-around;
+}
+.header_link {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 15px;
+}
+.about-me-text{
+    font-size: 15px;
+    font-style: normal;
+}
+.Reinis{
+    width: 250px;
+    padding: 10px 800px;
+    display: flex;
+}
+.container{
+    margin: 5px; ;
+    border: 3px solid white;
+    padding: 5px;
+}
+.Header{
+    margin: 10px;
+    font-size: 30px;
+    font-style: normal;
+}
+.container2{
+    border: 3px solid black;
+}
+.container3{
+    border: 3px solid gray;
+}
+.FAQ{
+    padding: 15px;
+}
+.position{
+    padding: 800px;
+}
+.linkedin{
+    width: 30px;
+    height: 30px;
+    display: inline;
+    padding: 0px 10px 0px 0px;
+}
+.mail{
+    width: 30px;
+    height: 30px;
+    display: inline;
+    padding: 0px 10px 0px 0px;
+}
+.phone{
+    width: 30px;
+    height: 30px;
+    display: inline;
+    padding: 0px 10px 0px 0px;  
+}
