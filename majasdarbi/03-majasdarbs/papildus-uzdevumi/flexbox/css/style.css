@@ -8,14 +8,14 @@ body * + * { margin-top: 1.5em;}
 .flex-container {
   display: flex;
   min-height: 500px;
-  background-color: grey;
+  background-color: rgb(32, 32, 32);
   flex-flow: row wrap; /* sounds right */
   justify-content: space-around; /* sounds right */
   flex-shrink: 1;
 }
 
 .flex-container > div {
-  background-color: lightgrey;
+  background-color: rgb(211, 211, 211);
   margin: 10px;
   width: 75px;
   height: 75px;

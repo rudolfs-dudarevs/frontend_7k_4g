@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    background-color: rgb(128, 64, 32);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    justify-content: center;
+    background-color: black;
+}
+
+.header_link {
+    text-decoration: none;
+    color: gray;
+    padding: 20px;
+
+}
+
+h1 {
+    color: rgb(87, 0, 0);
+    height: 24px;
+
+}
+
+h2 {
+    color: rgb(4, 34, 34);
+    text-align: center;
+}
+
+.about_me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-wrap: wrap-reverse;
+    padding: 10px;
+}
+
+.about_me_image {
+    justify-content: end;
+    height: 120px;
+    width: 140px;
+}
+
+.about_me_tel, .about_me_mail, .about_me_contactme {
+    padding: 0 69px;
+    margin: 5px;
+    color: rgb(50, 0, 97);
+    text-decoration: none;
+}
+
+.work_experience {
+    text-align: center;
+}
+
+.education {
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* .skills_items {
+    display: flex;
+    align-items: center;
+} */
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-me_form {
+    display: block;
+    padding: 20px 20px 70px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-me_input {
+    height: 25px;
+    width: 190px;
+    color: rgb(202, 119, 17);
+}
+
+.contact-me_text-area {
+    height: 70px;
+    width: 192px;
+    color: rgb(202, 119, 17);
+}
+
+.contact-me_submit-btn {
+    padding: 8px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border-color: yellow;
+    margin: 10px;
+    color: darkred;
+    font: 200;
+}
