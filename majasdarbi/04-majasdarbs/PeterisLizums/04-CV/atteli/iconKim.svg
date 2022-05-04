@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="7.7700195mm"
+   height="7.7700195mm"
+   viewBox="0 0 7.7700195 7.7700195"
+   version="1.1"
+   id="svg3247"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="iconKim.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3249"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.77771465"
+     inkscape:cx="-253.30627"
+     inkscape:cy="-57.21893"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs3244" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-162.81602,-163.49644)">
+    <g
+       id="g3220"
+       transform="matrix(0.13560783,0,0,0.13560783,178.66707,74.020405)">
+      <circle
+         fill="#ffffff"
+         cx="-88.240059"
+         cy="688.4635"
+         r="27.575359"
+         id="circle3064"
+         style="stroke:#ff0000;stroke-width:2.147;stroke-miterlimit:4;stroke-dasharray:none" />
+      <g
+         id="star"
+         transform="matrix(23.651233,0,0,23.651233,-88.24006,688.72199)"
+         fill="#ed1c27">
+        <g
+           id="cone">
+          <polygon
+             id="triangle"
+             points="0,1 0.5,1 0,0 "
+             transform="rotate(18,3.1568758,-0.5)" />
+          <use
+             xlink:href="#triangle"
+             transform="scale(-1,1)"
+             id="use12"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+        <use
+           xlink:href="#cone"
+           transform="rotate(72)"
+           id="use14"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#cone"
+           transform="rotate(-72)"
+           id="use16"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#cone"
+           transform="rotate(144)"
+           id="use18"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           xlink:href="#cone"
+           transform="rotate(-144)"
+           id="use20"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+      </g>
+    </g>
+  </g>
+</svg>

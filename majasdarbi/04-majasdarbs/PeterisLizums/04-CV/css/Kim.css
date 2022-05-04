@@ -1,0 +1,87 @@
+body {
+    font-family: 'Mukta Malar', sans-serif;
+    margin-top: 15px;
+}
+div {
+    border-color: red;
+    border-style: solid;
+    border-width: 0px;
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+.middle div {
+    border-top: 2px;
+    border-color: #6ebefa;
+    border-style: solid;
+}
+.middle .header, .middle .nav , .middle .btn {
+    border-top: 0px;
+}
+.header img {
+    height: 20vh;
+    padding: 0px 40px;
+    display: inline-block;   
+}
+.side {
+    height: 100em;
+    width: 15%;
+}
+.middle {
+    height: 100%;
+    width: 68%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+}
+.header {
+    text-align: center;
+    width: 100%;
+}
+.nav {
+    text-align: center;
+    width: 100%;
+    min-height: 70px;
+}
+a:any-link {
+	text-decoration: none;
+}
+a:link, a:visited, a:hover, a:active {
+	padding: 0px 20px;
+	text-decoration: none;
+}
+.nav {
+    width: 100%;
+    min-height: 70px;
+}
+.btn {
+    background-color: rgb(212, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    width: fit-content;
+    margin: 2px;
+}
+a:hover {
+    color: rgb(0, 50, 190);
+}
+iframe {
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+	.side {
+	  display: none;
+	}
+    .middle {
+        width: 100%;
+    }
+    #star {
+        display: none;
+    }
+    .btn {
+        width: 100%;
+    }
+}
