@@ -8,7 +8,7 @@ body * + * { margin-top: 1.5em;}
 .flex-container {
   display: flex;
   min-height: 500px;
-  background-color: grey;
+  background-color: rgb(92, 47, 47);
   flex-flow: row wrap; /* sounds right */
   justify-content: space-around; /* sounds right */
   flex-shrink: 1;

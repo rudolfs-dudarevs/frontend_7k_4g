@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(224, 221, 176);
+    font-family: 'Mukta', sans-serif;
+
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+    background-color: rgb(190, 186, 131);
+    min-height: 80px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
