@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+:root {
+    --grey:#F2F2F2;
+    --dark-blue: #2C3540;
+    --blue:#024873;
+    --pink:#FC475C;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    text-decoration: none;
+    color: var(--dark-blue);
+    list-style-type:none;
+    text-align: left;
+    list-style: none;
+    vertical-align: baseline;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: 0.7rem;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 1.2rem;
+    align-content: center;
+    background-color: var(--grey);
+    line-height: 1.5;
+}
+
+section {
+    padding:0 20% 10px 20%;
+    margin-top: 20px;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: var(--grey);
+    color: var(--dark-blue);
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1rem;
+}
+
+.nav-btn {
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    margin: 1vw;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.nav-btn:hover {
+    text-decoration: underline;
+}
+
+.nav-btn.nav-contactme {
+    background-color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    color: var(--grey);
+    text-decoration: none;
+}
+
+.nav-btn.nav-contactme:hover {
+    background-color: var(--grey);
+    color: var(--dark-blue);
+}
+
+.aboutme {
+    display: flex;
+    /* align-items: center; */
+    justify-content:flex-start;
+    align-content: flex-end;
+    flex-flow: column;
+    margin: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.aboutme-character {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    justify-items: center;
+}
+
+.aboutme-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    /* border: solid 5px var(--white); */
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+p.aboutme-describe {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.aboutme-contacts {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.aboutme-page:hover {
+    text-decoration: underline;
+}
+
+.aboutme-contacts-btn {
+    margin-top: 10px;
+    text-transform: uppercase;
+    border: solid 1px var(--dark-blue);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 40px;
+    width: fit-content;
+}
+
+.aboutme-contacts-btn:hover {
+    background-color: var(--dark-blue);
+    border: solid 1px var(--dark-blue);
+    color: var(--grey);
+}
+
+.work-experience {
+    display: block;
+}
+
+.work-exp-module {
+    margin-top: 10px;
+}
+
+.contactme-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.contactme-sumbmit-btn {
+    background-color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactme-sumbmit-btn:hover {
+    background-color: var(--grey);
+    color: var(--dark-blue);
+}
+
+@media only screen and (max-width: 960px) {
+    .navigation {
+        flex-direction: column;
+    }
+}
