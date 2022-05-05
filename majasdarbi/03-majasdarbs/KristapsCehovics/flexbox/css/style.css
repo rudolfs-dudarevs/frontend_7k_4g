@@ -1,0 +1,88 @@
+body * + * { margin-top: 1.5em;}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  min-height: 500px;
+  background-color: rgb(32, 32, 32);
+  flex-flow: row wrap; /* sounds right */
+  justify-content: space-around; /* sounds right */
+  flex-shrink: 1;
+}
+
+/* .flex-container > div {
+  background-color: rgb(211, 211, 211);
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  padding: 20px;
+  font-size: 30px;
+} */
+
+.one {
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  height: 100px;
+  background-color: rgb(211, 211, 211);
+  margin: 10px;
+  width: 75px;
+  padding: 20px;
+  font-size: 30px;
+}
+.two {
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  height: 50px;
+  background-color: rgb(211, 211, 211);
+  margin: 10px;
+  width: 75px;
+  padding: 20px;
+  font-size: 30px;
+}
+.three {
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  height: 300px;
+  background-color: rgb(211, 211, 211);
+  margin: 10px;
+  width: 75px;
+  padding: 20px;
+  font-size: 30px;
+}
+.four {
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  background-color: rgb(211, 211, 211);
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  padding: 20px;
+  font-size: 30px;
+}
+.five, .six, .seven {
+  display: flex;
+  align-self: flex-end;
+  background-color: rgb(211, 211, 211);
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* .one, .two, .three, .four {
+  flex-direction: row;
+  justify-content: center;
+} */
+
+h2 {
+  color: crimson;
+}
