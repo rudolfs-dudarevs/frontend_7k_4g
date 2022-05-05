@@ -1,0 +1,23 @@
+body {
+    padding: 50px;
+}
+
+.row {
+    border: 1px solid gainsboro;
+}
+
+.col {
+    height: 80px;
+}
+
+#red-box {
+    background-color: red;
+}
+
+#yellow-box {
+    background-color: yellow;
+}
+
+#green-box {
+    background-color: green;
+}

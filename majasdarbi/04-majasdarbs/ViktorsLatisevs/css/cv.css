@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+:root {
+    --main-color:#fff7f5;
+    --secondary-color: #ef9273;
+    --text-color: #0d0d0d;
+    --accent-color: #ef9273;
+}
+
+body {
+    font-family: 'Staatliches', monospace;
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    background-color: #fff7f5  ;
+}
+
+
+.header {
+    background-color: #ef9273;
+    border: 1px solid #ef9273;
+}
+
+.navico {
+    height:1em;  
+    padding-right: 10px;
+}
+
+
+
+nav a { 
+  background: #ef9273;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  height: auto;
+  
+}
+
+nav a:hover {
+    background: #ef9273;
+    outline: 1px solid #ef9273;
+    color: white;
+  } 
+
+.mainphoto {
+    display: inline-block;
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1;
+    border-color:#ef9273;
+}
+
+
+address a {
+    text-decoration: none;
+    color: black;
+
+}
+
+section {
+    padding: 10px 10px;    
+}
+
+#aboutme {
+    text-align: center;
+}
+
+input {
+    width: 300px;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
+    color: var(--text-color);
+    border: 3px double #ef9273;
+    background-color: #ef9273;
+    border-radius: 50px;
+}
