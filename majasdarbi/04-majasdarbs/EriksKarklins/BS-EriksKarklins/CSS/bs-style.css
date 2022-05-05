@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding: 40px;
+}
+
+.row {
+    border: none;
+}
+
+.col {
+    height: 75px;
+}
+
+#red {
+    background-color: rgb(97, 4, 4);
+}
+
+#yellow {
+    background-color: white;
+}
+
+#green {
+    background-color: rgb(97, 4, 4);
+}
