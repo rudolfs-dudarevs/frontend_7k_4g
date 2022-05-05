@@ -1,17 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+*{
+    margin: 0%
+}
+.navbar{
+    position: fixed !important;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+}
+.navbar-brand{
+    color: white !important;
+    padding-left: 20px;
+}
+button.navbar-toggler{
+    margin-right: 1vw;
+    border: solid white;
+    border-radius: 15px;
+}
+.toggler-icon{
+    color: white
+}
+.nav-link{
+    text-decoration: none;
+    color: black !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+.nav-link:hover{
+    background: linear-gradient(90deg, rgba(226,228,228,1) 0%, rgba(127,127,224,1) 100%);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.col-lg-12, col-lg-6{
+    padding: 20px;
+    min-height: 20vh;
+}
 body{
-    font-family: 'Roboto' !important;
+    font-family: 'Work Sans' !important;
+    font-size: 1.2rem !important;
+    color: black;
     background: rgb(226,228,228);
     background: linear-gradient(90deg, rgba(226,228,228,1) 0%, rgba(127,127,224,1) 100%);
 }
-
-.container{
-    margin-left: 1vw !important;
-    display: flex;
-    flex-direction: column;
+.container-fluid{
+    margin-top: 58px;
 }
 .row{
+    padding-left: 1vw !important;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#aboutme{
+    align-items: center;
+    text-align: center;
+}
+
+.aboutme-img{
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.about-me-contacts{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.btn-primary{
+    max-width: 170px;
+    min-width: 170px;
+    border-radius: 10px 0 !important;
+}
+.contact-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-floating{
+    min-width: 300px;
+    width: 700px !important;
+}
+
+div h4, h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Tapestry', cursive;
 }
