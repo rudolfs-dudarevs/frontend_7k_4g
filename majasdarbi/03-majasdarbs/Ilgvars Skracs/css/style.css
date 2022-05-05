@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Vesper+Libre&display=swap');
+
+body {
+    font-family: 'Vesper Libre', serif;
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    background-color:gainsboro;
+}
+
+
+.header {
+    padding: 20px 0;
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 1;
+    border-color:black;
+}
+
+.header a {
+  flex: auto;
+  text-align: center;
+  background: rgba(204, 204, 204, 0.905);
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+    background: rgba(204, 204, 204, 0.545);
+    outline: 1px solid black;
+    color: white;
+  }
+
+.mainphoto {
+    width: 200px;
+    height: auto;
+    border-style: solid;
+    border-width: 1;
+    border-color:darkgray;
+}
+
+address a {
+    text-decoration: none;
+    color: black;
+
+}
+
+section {
+    padding: 10px 10px;    
+}
+
+#aboutme {
+    text-align: center;
+}
+
+input {
+    width: 300px;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+}
