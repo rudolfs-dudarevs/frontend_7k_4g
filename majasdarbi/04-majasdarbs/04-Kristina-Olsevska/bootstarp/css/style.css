@@ -1,0 +1,36 @@
+.body {
+    background-color: rgb(238, 238, 238);
+}
+
+.row div {
+    border: 1px solid rgb(250, 250, 252);
+    background-color: blueviolet;
+    color: white;
+}
+.row {
+    margin: 15px;
+}
+
+.btn-primary {
+    background-color: blueviolet;
+    color: white; 
+    border-radius: 10px;
+    border-color: blueviolet;
+}
+
+.btn-secondary {
+    background-color: rgb(218, 54, 122);
+    color: white; 
+    border-radius: 10px;
+    border-color: rgb(218, 54, 122);
+}
+
+.btn-primary:hover {
+    background-color: rgb(218, 54, 122);
+    border-color: rgb(218, 54, 122);
+}
+
+.btn-secondary:hover {
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
