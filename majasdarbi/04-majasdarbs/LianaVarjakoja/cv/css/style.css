@@ -8,9 +8,9 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     line-height: 1;
-    color: rgb(241 246 247);
+    color: rgb(241, 246, 247);
     background-color: rgb(30, 46, 66);
 }
 
@@ -65,11 +65,11 @@ section {
 }
 
 .about-me_pre-title {
-    font-size: 2.5vw;
+    font-size: 1.8em;
 }
 
 .about-me_title {
-    font-size: 4vw;
+    font-size: 2.9em;
 }
 
 .about-me_image {
@@ -77,28 +77,33 @@ section {
     height: 190px;
     margin: 0 0 0 70px;
     border-radius: 50%;
+    background-image: url(../karins.png);
 }
 
 .about-me_contacts {
     display: flex;
     flex-direction: column;
-}
-
-.about-me_link,
-.about-me_contact-btn {
-    display: inline-block;
-    font-size: 1.5vw;
-    color: rgb(90, 191, 216);
-    text-decoration: none;
     text-align: left;
 }
 
-.about-me_link {
-    margin: 5px 0;
+.about-me_row {
+    margin: 0 0 10px 0;
 }
 
-.about-me_link:hover {
-    color: rgb(205, 232, 236);
+.about-me_icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+    width: 25px;
+    height: 25px;
+}
+
+.about-me_link {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.1em;
+    color: rgb(90, 191, 216);
+    text-decoration: none;
 }
 
 .about-me_contact-btn {
@@ -107,6 +112,13 @@ section {
     border-radius: 5px;
     padding: 10px 70px;
     text-align: center;
+    font-size: 1.1em;
+    color: rgb(90, 191, 216);
+    text-decoration: none;
+}
+
+.about-me_link:hover {
+    color: rgb(205, 232, 236);
 }
 
 .about-me_contact-btn:hover {
@@ -121,7 +133,7 @@ section {
     margin: 0 0 50px 0;
 }
 
-.work-experience_details{
+.work-experience_details {
     margin: 10px 0 0 0;
 }
 
@@ -136,22 +148,25 @@ p {
     margin: 0;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    
+
 }
 
 h2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.3em;
     margin: 0 0 20px 0;
     color: rgb(90, 191, 216);
     text-transform: uppercase;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.7em;
     margin: 0 0 20px 0px;
 }
 
@@ -166,8 +181,10 @@ h4 {
 /* iframe */
 iframe {
     border-radius: 12px;
-    width: 400px; 
-    height:220px;
+    width: 400px;
+    height: 220px;
+    margin: 0 auto;
+    display: block;
 }
 
 /* clear-lis t*/
@@ -181,7 +198,7 @@ iframe {
 .contact-me_form {
     display: flex;
     width: 500px;
-    
+
     /*width: 100%;*/
 
     flex-direction: column;
@@ -189,7 +206,8 @@ iframe {
     margin: 0 auto;
 }
 
-.contact-me_input, .contact-me_text-area {
+.contact-me_input,
+.contact-me_text-area {
     width: 80%;
     height: 50px;
     font-size: 1em;
@@ -198,10 +216,19 @@ iframe {
     background-color: transparent;
     padding: 20px;
     margin-bottom: 15px;
+    color: rgb(241, 246, 247);
+    outline: 0;
 }
 
 .contact-me_text-area {
     height: 150px;
+}
+
+.contact-me_input:focus,
+.contact-me_input:hover,
+.contact-me_text-area:focus,
+.contact-me_text-area:hover {
+    border: solid 1px rgb(90, 191, 216);
 }
 
 .contact-me_submit-btn {
@@ -212,6 +239,7 @@ iframe {
     border: 1px solid rgb(90, 191, 216);
     border-radius: 5px;
     padding: 10px 70px;
+    cursor: pointer;
 }
 
 .contact-me_submit-btn:hover {
@@ -220,12 +248,16 @@ iframe {
     border-color: rgb(205, 232, 236);
 }
 
-.contact-me_input::placeholder, 
+.contact-me_input::placeholder,
 .contact-me_text-area::placeholder {
     color: rgb(241 246 247);
 }
 
 @media only screen and (max-width: 768px) {
+
+    body {
+        font-size: 2.8vw;
+    }
 
     .header {
         display: flex;
@@ -233,7 +265,7 @@ iframe {
         padding: 10px 0;
         flex-direction: column-reverse;
     }
-      
+
     .header_link {
         margin-bottom: 10px;
     }
@@ -246,34 +278,36 @@ iframe {
         justify-content: center;
     }
 
+    .about-me_title {
+        margin: 0 0 30px 0;
+    }
+
     .about-me_hero {
         width: 100%;
         flex-direction: column-reverse;
     }
-        
+
     .about-me_link {
         text-align: center;
     }
 
     .about-me_image {
-        margin: 0 0 10px 0;
+        margin: 0 0 15px 0;
     }
 
     .contact-me_form {
         width: 100%;
     }
 
+    iframe {
+        width: 100%;
+
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .about-me_image {
-    background-image:  url(../karins2.jpg);
-    background-size: cover;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .about-me_image {
-        background-image:  url(../karins.png);
+        background-image: url(../karins2.jpg);
+        background-size: cover;
     }
 }
