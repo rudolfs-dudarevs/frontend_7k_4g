@@ -3,14 +3,14 @@
 
 
 
-String(123)     
+String(123)  // "123"
 String(-12.3)      
-String(null)        
+String(null)        //"null"
 String(undefined)      
 String(true)          
 String(false)        
 String(function () {})  
-String({})             
+String({}) // '[object Object]'  
 String({ key: 42 })     
 String([])              
 String([1, 2])          
@@ -37,8 +37,8 @@ Boolean("false")
 Boolean(0)              
 Boolean(42)             
 Boolean(-42)            
-Boolean(NaN)            
-Boolean(null)           
+Boolean(NaN) // false   
+Boolean(null) // false   
 Boolean(undefined)      
 Boolean(function () {}) 
 Boolean({})             

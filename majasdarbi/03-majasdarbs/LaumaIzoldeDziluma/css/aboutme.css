@@ -1,0 +1,64 @@
+.aboutme {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom:5vh;
+    padding-top:3vh;
+    margin: 0px 0;
+}
+.aboutme_hero {
+    display: flex;
+    align-items: center;
+}
+
+.aboutme_image {
+    border-radius: 10px;
+}
+
+.aboutme_title {
+    font-size: 3vw;
+    padding-right: 20px;
+}
+
+.aboutme_contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme_link,
+.aboutme_contact-button,
+.aboutme_phone {
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 2vw;
+    color: var(--accent-color);
+    text-decoration: none;
+    text-align: left;
+}
+
+.aboutme_contact-button {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right:10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.aboutme_link:hover {
+    color: var(--text-color);
+}
+
+.aboutme_phone:hover{
+    color: var(--text-color);
+}
+.aboutme_contact-button:hover {
+    color: var(--secondary-color);
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+}
