@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=EB+Garamond:wght@443&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
+
+body {
+    line-height: 1.5;
+    font-size: 15px;
+    background-color: #82687B;
+    font-family:'Bitter', serif;
+    color:var(--text-color);
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:'Tinos', serif;
+    color:var(--text-color);
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.3em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 10px;
+}
+section {
+    padding: 0px 20% 0px 20%;
+}
+
+:root {
+    --main-color:#82687B;
+    --secondary-color: #5c4451;
+    --accent-color: #242223;
+    --text-color: #121112;
+}
