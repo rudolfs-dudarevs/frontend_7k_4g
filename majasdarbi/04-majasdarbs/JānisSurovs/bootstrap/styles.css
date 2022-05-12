@@ -1,0 +1,16 @@
+body, html{
+    width: 100vw;
+}
+.col{
+    background-color: blanchedalmond;
+    height: 100%;
+}
+.row{
+    height: 100%;
+    border: 1px solid grey; 
+    background-color: lavender;
+    text-align: center;
+}
+.container-fluid{
+    height: 25vh;
+}
