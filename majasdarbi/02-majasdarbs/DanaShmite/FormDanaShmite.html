@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>02-Dana</title>
+    </head>
+    <body>
+        <div>
+            <h1>Reģistrācijas forma</h1>
+            <form action=""method="get">
+                <fieldset>
+                    <label>Ievietot vārdu</label> 
+                    <input type="text">
+                    <label>Ievietot paroli</label>
+                    <input type="password"/>
+                </fieldset>
+            </form>
+            <br>
+                <form action=""method="get">
+                    <fieldset>
+                    <legend><mark>Informācija par sevi</mark></legend>
+                    <h3>Dzimums</h3>
+                    <input type="radio" id="vīrietis" name="Dzimums" value="vīrietis">
+                    <label>vīrietis</label><br>
+                    <input type="radio" id="sieviete" name="Dzimums" value="sieviete">
+                    <label>sieviete</label> <br>
+                    <br>
+                     <label></label> Dzimšanas datums</label>
+                      <input type="date" id="birthday" name="birthday">
+                      <br>
+                      <h3>Adrese</h3>
+                      <label>Jūsu pilsēta</label> 
+                      <input list="Pilsēta" name="Pilsēta" class="datalist-input" />
+                      <datalist id="Pilsēta">
+                          <option value="Rīga" />
+                          <option value="Liepāja" />
+                          <option value="Jelgava" />
+                          <option value="Daugavpils" />
+                          <option value="Alūksne" />
+                     </datalist>
+                     </fieldset>
+                </form>
+                <br>
+                <form action=""method="get">
+                    <fieldset>
+                    <legend><mark>Jūsu hobiji</mark></legend>
+                        <label>Jūs varat izvēlēties jebkuru hobiju skaitu </label><br>
+                          <input type="checkbox" name="hobby1" value="ceļojumi">Ceļojumi
+                            <input type="checkbox" name="hobby2" value="programmēšana">Programmēšana<br>  
+                            <input type="checkbox" name="hobby3" value="Zīmēt">Zīmēt
+                            <input type="checkbox" name="hobby4" value="Spēlēt mūzikas instrumentu">Spēlēt mūzikas instrumentu<br>
+                        </div>
+                     </fieldset>
+                </form><br>
+                <form action=""method="get">
+                    <fieldset>
+                    <legend><mark>Pieredze programēšanā</mark></legend>
+                        <label>Atzīmējiet cik ilgi strādājat programēšanā </label><br>
+                        <input type="radio" id="0-12 mēneši" name="Pieredze" value="0-12 mēneši">
+                        <label>0-12 mēneši</label><br>
+                        <input type="radio" id="13-24 mēneši" name="Pieredze" value="13-24 mēneši">
+                        <label>13-24 mēneši</label><br>
+                        <input type="radio" id="25-36 mēneši" name="Pieredze" value="25-36 mēneši">
+                        <label>25-36 mēneši</label><br>
+                        <input type="radio" id="37-vairāk mēneši" name="Pieredze" value="37- vairāk mēneši">
+                        <label>37- vairāk mēneši</label><br>
+                    </fieldset>
+                    </form>
+                    <br>
+               <button type="submit">Sūtīt</button>
+        </div>
+        </main>
+    </body>
+</html>
