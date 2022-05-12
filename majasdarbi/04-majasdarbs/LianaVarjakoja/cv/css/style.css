@@ -15,6 +15,7 @@ body {
 }
 
 /* header */
+
 header {
     margin: 0;
 }
@@ -39,14 +40,12 @@ header {
     color: rgb(90, 191, 216);
 }
 
-
 /* selection */
 
 section {
     padding: 0 20% 0 20%;
     margin: 0 0 30px 0;
 }
-
 
 /* about me */
 .about-me {
@@ -127,8 +126,8 @@ section {
     border-color: rgb(205, 232, 236);
 }
 
-
 /* work-experience */
+
 .work-experience_item {
     margin: 0 0 50px 0;
 }
@@ -144,6 +143,7 @@ section {
 
 
 /* p, h */
+
 p {
     margin: 0;
 }
@@ -179,6 +179,7 @@ h4 {
 }
 
 /* iframe */
+
 iframe {
     border-radius: 12px;
     width: 400px;
@@ -187,7 +188,8 @@ iframe {
     display: block;
 }
 
-/* clear-lis t*/
+/* clear-list */
+
 .clear-list {
     list-style: none;
     margin: 0;
@@ -195,12 +197,10 @@ iframe {
 }
 
 /* contact-me */
+
 .contact-me_form {
     display: flex;
     width: 500px;
-
-    /*width: 100%;*/
-
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
@@ -252,6 +252,8 @@ iframe {
 .contact-me_text-area::placeholder {
     color: rgb(241 246 247);
 }
+
+/* media */
 
 @media only screen and (max-width: 768px) {
 
