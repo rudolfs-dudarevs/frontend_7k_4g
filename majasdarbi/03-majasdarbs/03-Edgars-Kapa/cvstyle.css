@@ -1,0 +1,11 @@
+div {
+    padding: 20px 10px;
+    background-color: rgb(15, 41, 128);
+    display: flex;
+    justify-content: space-around;
+}
+.header-link {color:goldenrod}
+.main-info {
+    width: 50%;
+    margin: 0 auto;
+}
