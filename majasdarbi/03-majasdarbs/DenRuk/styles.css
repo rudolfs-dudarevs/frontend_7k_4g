@@ -1,0 +1,46 @@
+body{
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: orange;
+}
+.header{
+    padding: 20px 20px;
+    margin: 0px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header_link{
+    padding: 40;
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(123, 124, 186);
+    text-transform: uppercase;
+}
+
+* {
+    margin: 10;
+}
+html, body{
+    height: 100%;
+}
+.work-experience {
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container div{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: blueviolet;
+}
+button{
+     color: blue;
+    background-color: rgb(86, 154, 101);
+}
+   
