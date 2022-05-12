@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
 *{
     margin: 0%
 }
@@ -39,7 +39,7 @@ button.navbar-toggler{
     min-height: 20vh;
 }
 body{
-    font-family: 'Work Sans' !important;
+    font-family: 'Hahmlet', serif !important;
     font-size: 1.2rem !important;
     color: black;
     background: rgb(226,228,228);
@@ -89,12 +89,25 @@ body{
     align-items: center;
 }
 .form-floating{
-    min-width: 300px;
-    width: 700px !important;
+    width: 60%
 }
 
 div h4, h1{
     text-transform: uppercase;
     font-weight: 700;
-    font-family: 'Tapestry', cursive;
+    font-family: 'Hahmlet', serif;
+    padding-bottom: 1rem;
+}
+
+.title{
+    font-family: ;
+}
+
+em {
+    font-style: italic;
+}
+
+.list-group-item{
+    background-color: transparent !important;
+    border: none !important;
 }
