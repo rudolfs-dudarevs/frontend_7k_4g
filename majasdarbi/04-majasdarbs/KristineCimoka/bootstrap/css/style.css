@@ -1,0 +1,17 @@
+body {
+    padding: 20px;
+}
+
+.col {
+    height: 80px;
+}
+
+#red {
+    background-color:red;
+}
+#yellow {
+    background-color:yellow;
+}
+#green {
+    background-color:green;
+}
