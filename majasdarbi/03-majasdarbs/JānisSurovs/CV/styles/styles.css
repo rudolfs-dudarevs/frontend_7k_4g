@@ -1,7 +1,21 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 *{
     margin: 0%
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+html, body {
+    min-height: 100%;
+    height: 100%;
+    font-family: "Ubuntu", Sans-Serif;
+
 }
 .navbar{
     position: fixed !important;
@@ -39,7 +53,7 @@ button.navbar-toggler{
     min-height: 20vh;
 }
 body{
-    font-family: 'Hahmlet', serif !important;
+    font-family: "Ubuntu", Sans-Serif !important;
     font-size: 1.2rem !important;
     color: black;
     background: rgb(226,228,228);
@@ -95,14 +109,9 @@ body{
 div h4, h1{
     text-transform: uppercase;
     font-weight: 700;
-    font-family: 'Hahmlet', serif;
+    font-family: "Ubuntu", Sans-Serif !important;
     padding-bottom: 1rem;
 }
-
-.title{
-    font-family: ;
-}
-
 em {
     font-style: italic;
 }
