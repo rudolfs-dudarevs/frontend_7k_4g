@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+}
+button {
+    height: 50px;
+    padding: 0 10px;
+    margin: 10px;
+    background-color: aqua;
+}
+.main.btn {
+    background-color: blue;
+    width: 100px;
+    height: 80px;
+}
+#buy-now-btn {
+    color: bisque;
+    font-weight: bold;
+    background-color: crimson; !important;
+}
+a {
+    font-size: 24px;
+    color: darkblue;
+    font-weight: bold;
+}
+[href="#section-2"] {
+    color: darkseagreen;
+}
+
+.special.btn {
+    border: 3px solid hotpink;
+}
+.main.btn.special.btn {
+    border: 5px solid yellow;
+}
