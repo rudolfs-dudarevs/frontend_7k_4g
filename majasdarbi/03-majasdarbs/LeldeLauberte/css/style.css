@@ -1,0 +1,66 @@
+body {background-color: rgb(177, 199, 199);
+display: flex;
+align-items: center;
+}
+
+.aboutme {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-wrap: wrap;
+
+    text-align: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    margin: 50px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.aboutme-hero {display: flex;
+align-items: center;
+
+}
+
+.aboutme-image {
+    display:inline-flex;
+    height: 210px;
+    width: 160px;
+    border-radius: 10%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.aboutme-pretitle {
+    font-size: 3vw;
+    
+}
+.aboutme-title {
+    font-size: 4vw;
+    font-family: 'Smooch', cursive;
+
+}
+
+.aboutme-contacts {
+
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.aboutme-phone:hover {
+    background-color: aliceblue;
+}
+
+.aboutme-email:hover {
+    background-color: aquamarine;
+}
+
+.aboutme-link:hover {
+    background-color: blueviolet;
+}
+
+.aboutme-contact-btn:hover {
+    background-color: aquamarine;
+}
+
+
