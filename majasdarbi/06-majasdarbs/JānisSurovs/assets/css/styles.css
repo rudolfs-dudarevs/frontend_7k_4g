@@ -16,8 +16,17 @@ body {
     background-color: grey;
     text-align: center;
     justify-content: center;
+    color: white;
 }
 
 .btn{
     width: 150px;
+    background-color: #7066e0;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
 }

@@ -17,8 +17,10 @@ document.getElementById("getIP").onclick=async () => {
         }
       }
     })
-    
+
     if (ipAddress) {
       Swal.fire(`Your IP address is ${ipAddress}`)
+      document.getElementById('promptAnswer').innerHTML = ipAddress
     }
+
 };

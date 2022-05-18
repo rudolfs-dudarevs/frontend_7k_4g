@@ -1,10 +1,10 @@
 function getValue() {
     let characters = ['a','b','c','d','e','f','g','h','i','j','k,','l','m','n','o','p','q','r','s','t','u','v','w','x,','y','z'];
-    let arrayId = prompt("Enter number from 0 to 25");
+    let arrayId = prompt("Type a number from 0 to 25");
     let output = document.getElementById('promptAnswer');
     output.innerHTML = characters[arrayId];
 
-    if(arrayId > 25 || arrayId < 0 || arrayId === null || arrayId === '') {
+    if( arrayId > 25 || arrayId < 0 || arrayId === null || arrayId === '' || arrayId === isNaN()) {
         Swal.fire({
             title: 'Error!',
             text: 'Something wrong. Please enter the value from 0 to 25',
@@ -20,7 +20,7 @@ function getValue() {
                 if (result.isDismissed) {
                     swal.fire(
                         'Cancelled',
-                        document.getElementById('promptAnswer').innerHTML = "Cancelled. Try again!"
+                        document.getElementById('promptAnswer').innerHTML = "Try again!"
                     )
                 }
               }
@@ -28,7 +28,7 @@ function getValue() {
     } else {
         Swal.fire({
             title: 'Success!',
-            text: `Success! You have entered a value ${arrayId}`,
+            text: `You have entered a value ${arrayId}`,
             icon: 'success',
             confirmButtonText: 'OK'
           })
