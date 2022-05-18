@@ -1,0 +1,19 @@
+body {
+    background-color: lightgrey;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 80px;
+}
+
+#promptAnswer{
+    height: 15vh;
+    width: 40vw;
+    background-color: grey;
+    text-align: center;
+    justify-content: center;
+}
