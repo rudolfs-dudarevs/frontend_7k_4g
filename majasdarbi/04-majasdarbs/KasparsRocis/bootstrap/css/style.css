@@ -1,0 +1,15 @@
+.row * {
+    height:  600px;
+}
+
+nav.col-sm-12.col-lg-4 {
+    background-color: red;
+}
+
+main.col-sm-12.col-lg-4 {
+    background-color: yellow;
+}
+
+footer.col-sm-12.col-lg-4 {
+    background-color: green;
+}
