@@ -1,0 +1,33 @@
+@import "./common.css";
+@import "./color.css";
+@import "./header.css";
+@import "./aboutme.css";
+@import "./work-experience.css";
+@import "./contactme.css";
+
+* {
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .aboutme_image{
+        display: none;
+    }
+    
+    .small-image{
+        display: block;
+    }
+
+    .aboutme {
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+        display: flexbox;
+        flex-direction: column;
+    }
+    }
