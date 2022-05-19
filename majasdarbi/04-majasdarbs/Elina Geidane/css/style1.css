@@ -1,0 +1,37 @@
+{
+    margin: 0;
+}
+html, body
+
+body{
+.container {
+  
+    height:100%
+
+}
+.container{
+    display:flex;
+    flex-wrap:wrap
+
+}
+.item{
+    margin: 0 15px 0 15px;
+    padding: 20% 20xp 0;
+    background-color: cadetblue;
+}
+.nav{
+    background-color: cornflowerblue;
+}
+content{
+    background-color: brown;
+}
+.widget{
+    background-color: blue;
+
+}
+@media only screen and (min-width:1200px){
+    .nav{
+        widget
+
+    }
+}

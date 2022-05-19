@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap);
+
+.header {
+    height: 60px;
+    padding: 20px 10px;
+    background-color:aqua;
+    justify-content: space-around;
+}
+
+.header_link {
+    text-decoration: none;
+    color:darkblue;
+}
+.contact {
+    text-decoration: none;
+    color:black;
+
+}
+.work-experience__item {
+    margin-bottom: 50px;
+    font: bold;
+}
+
+.work-experience__tools {
+    font-size: 14px;
+}
+
+
+.contact-me__input,
+.contact-me__text-area {
+    width: 70%;
+    height: 50px;
+    font-size: 0.8em;
+    border: solid 2px rgb(166, 65, 65);
+    background-color:rgb(166, 65, 65);
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}

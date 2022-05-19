@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding:20px 0;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+
+.header_link {
+    padding: 0 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header_link:hover {
+    color: var(--accent-color);
+}
