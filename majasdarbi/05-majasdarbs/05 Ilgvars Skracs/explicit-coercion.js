@@ -13,7 +13,7 @@ String(function () {})  //'function () {}'
 String({})             //'[object Object]'
 String({ key: 42 })     //'[object Object]'
 String([])             //'' 
-String([1, 2])         //'1,2' 
+String([1, 2])         // '1,2'
 
 
 Number("123")          //123 
