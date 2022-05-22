@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    background-color: #804020;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    justify-content: center;
+    background-color: black;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+.header_link {
+    text-decoration: none;
+    text-align: center;
+    color: gray;
+    padding: 20px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .header_link {
+        width:16.66%;
+    }
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    color: #570000;
+    height: 24px;
+    padding: 69px;
+
+}
+
+h2 {
+    color: #042222;
+    text-align: center;
+}
+
+.about_me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-end;
+    text-align: left;
+    padding-top: 130px;
+}
+
+.about_me_image_big, .about_me_image_574 {
+    display: flex;
+    justify-content: end;
+    /* height: 120px; */
+    width: 140px;
+}
+
+.about_me_image_big {
+    width: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+    .about_me_image_big {
+        background-image: url(./img/IMG_BIG.JPG);
+        width: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .about_me_image_574 {
+        background-image: url(./img/IMG_0574.JPG);
+        width: 0px;
+    }
+}
+
+.about_me_tel, .about_me_mail, .about_me_contactme {
+    padding: 0 69px;
+    margin: 5px;
+    color: #400577;
+    text-decoration: none;
+}
+
+.about_me_contacts {
+    margin: 20px;
+}
+
+.work_experience {
+    text-align: center;
+}
+
+.education {
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* .skills_items {
+    display: flex;
+    align-items: center;
+} */
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .contact-me_form {
+    display: block;
+    padding: 20px 20px 70px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-me_input {
+    height: 25px;
+    width: 190px;
+    color: rgb(202, 119, 17);
+}
+
+.contact-me_text-area {
+    height: 70px;
+    width: 192px;
+    color: rgb(202, 119, 17);
+}
+
+.contact-me_submit-btn {
+    padding: 8px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border-color: yellow;
+    margin: 10px;
+    color: darkred;
+    font: 200; 
+} */
