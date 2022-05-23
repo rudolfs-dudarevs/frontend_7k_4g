@@ -1,7 +1,9 @@
-const LaumaIzoldeDziluma = {
+const laumaIzoldeDziluma = {
     name: 'Lauma Izolde Dziļuma',
-    phoneNumber: '+371 26322409',
-    emailAdress: 'laumadz@gmail.com',
+    contacts: {
+        phoneNumber: '+371 26322409',
+        emailAdress: 'laumadz@gmail.com'
+    },
     workExperience: ['Biology and Science Teacher', 'Assistant to species and habitat expert'],
     education: ['Teacher Qualification', 'Erasmus+ Study Mobility', 'Bachelors Degree in Biology', 'Secondary Education'],
     additionalEducation: 'Participating in the program "Discover Tech"',
