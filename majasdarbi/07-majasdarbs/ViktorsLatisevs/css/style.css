@@ -16,13 +16,47 @@ body {
 }
 
 h1 {
-	margin-top: 12rem;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
+    margin-bottom: 0px;
 	font-family: var(--righteous-font);
 }
 
-ul {
-	margin-top: 2rem;
-	list-style: none;
+p {
+	margin-bottom: 10px;
+	padding-bottom: 0px;
+	font-family: var(--righteous-font); 
+}
+
+
+.container,
+.list-group-item {
+    display: flex;
+    justify-content:space-between;
+}
+
+.container {
+    padding: 100px 0px ;
+    flex-direction: column;
+}
+
+.input-group {
+    margin: 0 0 25px;
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+
+.task-text {
+    margin: 0 1px;
+    width: 70%;
+    text-align: center;
+}
+
+.task-number {
+    margin: 0 10px;
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
 }
