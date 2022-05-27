@@ -1,7 +1,7 @@
 // definējam globālus mainīgos - tādus, kas būs pieejami pilnīgi no jebkuras metodes, vietas kodā.
-let taskAdder;
 let myTasksContainer;
 let taskList;
+let addBtn;
 
 // izmantojam onload notikumu, lai sagaidītu līdz DOM ir ielādēts 
 // un varam tajā meklēt elementus un tos izmantot
@@ -10,7 +10,6 @@ window.onload = () => {
     taskInput = document.getElementById("taskInput");
 
     addBtn = document.getElementById('addBtn');
-    console.log("Task adder element:", taskAdder);
 
     myTasksContainer = document.getElementById('myTasks');
     console.log("My task container:", myTasksContainer);

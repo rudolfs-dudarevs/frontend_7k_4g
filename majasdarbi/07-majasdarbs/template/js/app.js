@@ -28,10 +28,8 @@
 
         toggleDone() - atzimet ka izdarito
             1 - nomainam elementam done vertibu done: false --> done: true un izsaucam renderTask funkciju lai atjauno sarakstu
-
-
 */
-let taskAdder;
+let addBtn;
 let myTasksContainer;
 let taskList;
 
