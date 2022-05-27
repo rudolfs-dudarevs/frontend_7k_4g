@@ -41,7 +41,7 @@ window.onload = () => {
     myTasksContainer = document.getElementById('myTasks');
     taskList = JSON.parse(localStorage.getItem('taskList'));
 
-    if(!taskList) {
+    if (!taskList) {
         taskList = [];
     }
 
@@ -51,23 +51,23 @@ window.onload = () => {
 
 
 const addTask = () => {
-    if(taskInput.value !== "") {
-    let task = {
-        taskText: taskInput.value,
-        done: false   
+    if (taskInput.value !== "") {
+        let task = {
+            taskText: taskInput.value,
+            done: false
+        }
+
+        taskInput.value = "";
+
+        taskList.push(task);
+        saveToLocalStorage();
+        renderTasks();
     }
-
-    taskInput.value = "";
-
-    taskList.push(task);
-    saveToLocalStorage();
-    renderTasks();
-}
 }
 
 const removeTask = (event) => {
     let taskIndex = event.target.dataset.index;
-    taskList.splice(taskIndex,1);
+    taskList.splice(taskIndex, 1);
 
     saveToLocalStorage();
     renderTasks();
@@ -76,7 +76,7 @@ const removeTask = (event) => {
 const toggleDone = (event) => {
     taskIndex = event.target.dataset.index;
 
-    if(taskList[taskIndex].done) {
+    if (taskList[taskIndex].done) {
         taskList[taskIndex].done = false;
     } else {
         taskList[taskIndex].done = true;
@@ -86,7 +86,7 @@ const toggleDone = (event) => {
 }
 
 const saveToLocalStorage = () => {
-    localStorage.setItem('taskList' , JSON.stringify(taskList));
+    localStorage.setItem('taskList', JSON.stringify(taskList));
 }
 
 const renderTasks = () => {
@@ -104,6 +104,6 @@ const renderTasks = () => {
         tasksToRender.push(task);
     })
 
-        myTasksContainer.innerHTML = tasksToRender.join('');
+    myTasksContainer.innerHTML = tasksToRender.join('');
 }
 
