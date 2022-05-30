@@ -1,0 +1,184 @@
+.wrapper{
+    background: #fff;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #addNewTask{
+    position: relative;
+    
+  }
+.input-group input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+  }
+.input-group input:focus{
+    border-color: #8E49E8;
+    box-shadow: 3px #8E49E8;
+  }
+.input-group button{
+    width: 50px;
+    height: 100%;
+    border: none;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 17px;
+    outline: none;
+    background: #8E49E8;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+.form-control{
+    width: 100% !important;
+    min-height: 45px;
+}
+
+
+.input-group button:hover,
+.footer button:hover{
+    background: #8E49E8;
+    opacity: 0.6;
+  }
+.input-group button.active{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+.taskList{
+	min-height: 50px;
+    max-height: 500px;
+	max-width: auto;
+    overflow-y: auto;
+	padding-left: 0px;
+  }
+.completedTasks{
+	min-height: 50px;
+    max-height: 500px;
+	max-width: auto;
+    overflow-y: auto;
+	padding-left: 0px;
+}
+.taskList li,
+.wrapper .completedTasks li{
+    position: relative;
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 8px;
+    background: lightgrey;
+	font-weight: 600;
+    border-radius: 3px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+  }
+
+.taskList li .icon {
+    position: absolute;
+    right: -45px;
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+.taskList li:hover .icon{
+    right: 0px;
+  }
+.taskList li .icon2{
+    position: absolute;
+    right: -95px;
+    background: green;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+.taskList li:hover .icon2{
+    right: 47px;
+	border-radius: 0 3px 3px 0;
+  }
+
+.wrapper .completedTasks li .icon {
+    position: absolute;
+    right: -45px;
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+.wrapper .completedTasks li:hover .icon{
+    right: 0px;
+  }
+.wrapper .completedTasks li .icon2{
+    position: absolute;
+    right: -95px;
+    background: green;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  } */
+/* .wrapper .completedTasks li:hover .icon2{
+  right: 47px;
+	border-radius: 0 3px 3px 0;
+  }
+
+
+/* icons */
+.fas{
+	margin-right: 5px;}
+
+/* footer */
+.footer{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+	font-weight: bold;}
+
+  /* buttons */
+#clearAllPendingTasks, #clearAllCompletedTasks{
+  opacity: 1;
+  pointer-events: auto;
+  padding: 10px;
+  margin: 10px;
+	width: 130px;
+	height: 42px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  background: #8E49E8;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;}
+  
