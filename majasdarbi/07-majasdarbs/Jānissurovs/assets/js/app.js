@@ -5,7 +5,7 @@ const todoButton = document.querySelector(".dataInput button");
 const todoList = document.querySelector(".ToDoList");
 const completeList = document.querySelector(".CompletedList");
 const buttonDeleteAll= document.querySelector(".footer button");
-const clearCompletedList = document.querySelector(".clearCompletedList");
+const deleteAllCompleted = document.querySelector(".deleteAllCompleted");
 const filterOption = document.querySelector('.filter');
 
 const taskStorage = "TodoArray";
@@ -198,9 +198,9 @@ function showCompleteTasks(){
 	const finishedTasksNumb = document.querySelector(".finishedTasks");
 	finishedTasksNumb.textContent = listArray2.length;
 	if(listArray2.length > 0){
-		clearCompletedList.classList.add("active");
+		deleteAllCompleted.classList.add("active");
 	}else{
-		clearCompletedList.classList.remove("active");
+		deleteAllCompleted.classList.remove("active");
 	}
 	
 		let newTodo = "";
@@ -238,7 +238,7 @@ function deleteFinishedTask(index){
   		}
 	})
 }
-clearCompletedList.onclick = ()=>{
+deleteAllCompleted.onclick = ()=>{
     	Swal.fire({
 	title: 'Are you sure?',
 	text: "You won't be able to revert this!",
