@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding: 20px;
+}
+
+.row {
+    border: none;
+    background-color: yellow;
+}
+
+.col {
+    height: 100px;
+}
