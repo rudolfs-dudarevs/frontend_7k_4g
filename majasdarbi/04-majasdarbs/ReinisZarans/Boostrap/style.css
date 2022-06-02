@@ -1,0 +1,23 @@
+.col{
+    border: 40px solid red;
+    padding:  5px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    
+    
+}
+.col1{
+    border: 40px solid yellow;
+    padding: 5px;
+    background-color: yellow;
+    text-align: center;
+    color: white;
+}
+.col2{
+    border: 40px solid green;
+    padding: 5px;
+    background-color: green;
+    text-align: center;
+    color: white;
+}
