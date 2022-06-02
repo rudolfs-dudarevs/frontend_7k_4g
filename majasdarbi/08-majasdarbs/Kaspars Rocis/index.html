@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="form"> 
+        <div>
+            <label for="text-field">Teksta lauks</label>
+            <input 
+                type="text" 
+                id="text-field"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="email-field">Epasta lauks</label>
+            <input 
+                type="email" 
+                id="email-field"
+                pattern=""
+                title=""
+                required
+            />
+        </div>
+
+        <div>
+            <label for="text-max-min">Teksta lauks ar Min un Max garumu</label>
+            <input 
+                type="text" 
+                id="text-max-min" 
+                title=""
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="password-first">Parole 1 (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="password-first" 
+                pattern=""
+                oninvalid="this.setCustomValidity('')"
+                required
+            />
+        </div>
+            
+        <div>
+            <label for="password-second">Parole 2 (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="password-second" 
+                title=""
+                required
+            />
+        </div>
+
+        <div>
+            <label for="week">Nedēļa</label>
+            <input 
+                type="week" 
+                name="week" 
+                id="week"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="time">Laiks</label>
+
+            <input 
+                type="time" 
+                id="time" 
+                name=""
+                required
+            />
+        </div>
+
+        </hr>
+
+        <div>
+            <label for="zip-code">ZIP : </label>
+            <input 
+                type="text" 
+                id="zip-code"
+                required
+            />
+            <label for="country">Valsts : </label>
+            <select id="country">
+              <option value="lv">Latvia</option>
+              <option value="lt">Lithuania</option>
+              <option value="et">Estonia</option>
+              <option value="fi">Finland</option>
+            </select>
+        </div>
+
+        <input id="submit" type="submit" class="button" value="Parbaudit">
+      </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
