@@ -1,0 +1,24 @@
+.container {
+  padding: 20% 
+}
+
+
+
+
+.row {
+  background-color: red;
+  height: 100px;
+  
+ 
+}
+
+.viens {background-color: red;}
+.divi {background-color: yellow;}
+.trīs {background-color: green;}
+
+@media only screen and (min-width: 576px) 
+
+
+
+
+
