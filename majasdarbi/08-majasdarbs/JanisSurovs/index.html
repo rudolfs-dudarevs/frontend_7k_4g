@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link type="stylesheet" src="./styles.css">
     <title>Validation</title>
 </head>
 <body>
@@ -13,79 +14,84 @@
                <header class="mt-3">
                    <h2>Registration form</h2>
                 </header>
-                <form id="form" class="form-floating">
-                        <label  
-                            for="FullName">
-                            Full name
-                        </label>
+                <form id="form" class="form-floating mt-3">
+                    <!-- Full name -->
+                    <div class="form-floating mb-3">
                         <input 
-                            class="form-control" 
-                            type="text" 
-                            id="FullName"
+                            class="form-control"
+                            type="text"
+                            id="fullName"
                             placeholder="Full name"
                             required
                         />
-
+                        <label  
+                            for="fullName">
+                            Full name
+                        </label>
+                    </div>
+                    <!-- E-mail -->
                     <div class="form-floating mb-3">
+                        <input 
+                            class="form-control " 
+                            type="email" 
+                            id="email" 
+                            placeholder="E-mail address"
+                            pattern=".+@gmail\.com"
+                            required
+                        />
                         <label 
                             for="email">
                             E-mail address
                         </label>
+                    </div>
+                    <!-- Age -->
+                    <div class="form-floating mb-3">
                         <input 
                             class="form-control" 
-                            type="email" 
-                            id="email" 
-                            pattern=".+@gmail\.com"
+                            type="text" 
+                            id="age" 
+                            placeholder="Age"
+                            minlength="5"
+                            maxlength="10"
                             required
                         />
-                    </div>
-
-                    <div class="mb-3">
                         <label 
                             class="form-label" 
                             for="age">
                             Your age
                         </label>
+                    </div>
+                    <!-- Password -->
+                    <div class="form-floating mb-3">
                         <input 
                             class="form-control" 
-                            type="text" 
-                            id="age" 
-                            minlength="5"
-                            maxlength="10"
+                            type="password" 
+                            id="pwInput" 
+                            placeholder="Password"
+                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                             required
                         />
-                    </div>    
-                    
-                    <div class="mb-3">
                         <label 
                             class="form-label" 
                             for="pwInput">
                             Password
                         </label>
-                        <input 
-                            class="form-control" 
-                            type="password" 
-                            id="pwInput" 
-                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
-                            oninvalid=""
-                            required
-                        />
                     </div>
-
+                    <!-- Show password -->
                     <div class="form-check">
-                        <label
-                            class="form-check-label" 
-                            for="showPassword">
-                            Show password
-                        </label>
                         <input
                             class="form-check-input"
                             type="checkbox"
                             onclick="showPassFunction()"
                             id="showPassword"
                         />
+                        <label
+                            class="form-check-label" 
+                            for="showPassword">
+                            Show password
+                        </label>
                     </div>
-
+                    <!-- Enter meeting week -->
                     <div class="mb-3 mt-3">
                         <label 
                             class="form-label" 
@@ -102,7 +108,7 @@
                             required
                         />
                     </div>
-
+                    <!-- Enter meeting time -->
                     <div class="mb-3">
                         <label 
                             class="form-label" 
@@ -118,6 +124,37 @@
                             required
                         />
                     </div>
+                    <!-- IP code -->
+                    <div class="form-floating mb-3">
+                        <input
+                            class="form-control"
+                            type="text"
+                            id="zip"
+                            placeholder="ZIP code"
+                            required
+                        />
+                        <label
+                            for="zip">
+                            ZIP code
+                        </label>
+                    </div>
+                    <!-- Country -->
+                    <div class="form-floating mb-3">
+                        <select 
+                            class="form-select"
+                            id="selectCountry">
+                                <option selected>Choose from the list</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="EE">Estonia</option>
+                                <option value="Other">Other</option>
+                        </select>
+                        <label
+                            for="selectCountry">
+                            Select you residence country
+                        </label>
+                    </div>
+                    <input class="btn btn-outline-success" type="submit" value="Submit">
                 </form>
            </div>
    </div>
