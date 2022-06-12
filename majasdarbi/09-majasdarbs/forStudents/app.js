@@ -9,11 +9,11 @@
         Mēs varētu katru <option> elementu ierakstīt HTML, bet labak izmantot ciklu kurš izies cauri visiem datiem un izveidos mums nepiecišamos elementus
 
         Implementācija: 
-        - Izvejdosim mainīgo dogSelector kurā saglabāsim mūsu <select> element var izmantot elementa id 'dogSelector' un getElementById() metodi
+        - Izveidosim mainīgo dogSelector kurā saglabāsim mūsu <select> element var izmantot elementa id 'dogSelector' un getElementById() metodi
         - izveidosim funkciju renderDogData(data) kura saņems suņa šķirnes datus 
-        - izmantojot cilku forEach() izesiem cauri datiem un pievienosim mūsu dogSelector elementam ar innerHTML nepiecišamo html:
+        - šajā funkcijā, izmantojot cilku forEach(), iziet cauri datu masīvam un pievienot mūsu dogSelector elementam ar innerHTML nepieciešamo html:
             `<option value=${breed.value}>${breed.name}</option>`
-        - izsaucam renderDogData() funkciju un rezultātā iegūsim visas iespejamāss suņu šķirnes iekš <select> elementa kā <options>.
+        - izsaucam renderDogData() funkciju un rezultātā iegūsim visas iespejamās suņu šķirnes iekš <select> elementa kā <options>.
 
 
 
@@ -37,7 +37,7 @@
     3)  Izvadit suņa bildi 
         
         Implementācija:
-        - izvedojam funkciju renderDogData() kurai kā parametru padosim mūsu data objektu 
+        - izvedojam funkciju renderDogImg() kurai kā parametru padosim mūsu data objektu 
         - ivejdosim vēl vienu selektoru lai dabūt mūsu dogImg elementu 
         - izmantojot innerHTML pievienot img tag ar src=${data.message}
 */
