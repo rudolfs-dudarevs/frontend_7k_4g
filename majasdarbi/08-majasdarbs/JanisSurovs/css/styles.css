@@ -1,0 +1,65 @@
+/* main css */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    text-align: center;
+}
+h2{
+    font-weight: 700;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.mb-3{
+    display: flex;
+    flex-direction: row;
+}
+.btn{
+    align-items: center;
+    background: #7674de;
+    color: #ffffff;
+    display: block;
+    margin: 20px auto 5px auto;
+    width: 150px;
+    height: 44px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    text-decoration-line: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    box-shadow: 0 0 8px #7674de;
+}
+.btn:hover {
+    background: linear-gradient(276deg, #16a6e4 0.21%, #e442fe 99.87%);
+    box-shadow: 0 0 8px #7674de;
+    color: #ffffff;
+}
+
+/* validation css */
+.invalid{
+    border: 2px solid #da1111;
+}
+.invalid:focus{
+    border: 2px solid #da1111;
+    box-shadow: 0 0 4px #da1111;
+}
+.valid{
+    border: 2px solid green;
+}
+.valid:focus{
+    border: 2px solid green;
+    box-shadow: 0 0 4px green;
+}
+
+@media only screen and (max-width: 1200px) {
+    .mb-3{
+        display: flex;
+        flex-direction: column;
+    }
+  }
