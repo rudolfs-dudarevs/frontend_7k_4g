@@ -1,0 +1,27 @@
+.container,
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    padding: 50px 0 ;
+    flex-direction: column;
+}
+
+.input-group {
+    margin: 0 0 50px;
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+
+.task-text {
+    margin: 0 25px;
+}
+
+.form-check-input {
+    width: 30px;
+    height: 30px;
+}
