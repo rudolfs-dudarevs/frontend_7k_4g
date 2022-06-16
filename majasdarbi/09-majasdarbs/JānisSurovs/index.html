@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dogs</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Dogs selector</title>
 </head>
 <body>
     <div class="container">
-        <select id="dogSelector" class="dog-selector">
-            <!-- Dogs selector -->
-        </select>
-
-        <div id="dogImg" class="dogImg">
-            <!-- Dogs image -->
+        <div class="col-md">
+            <div class="form-floating">
+                <select id='dogSelector' class="form-select">
+                </select>
+                <label for="dogSelector">Select dog</label>
+                <div id="dogImg" class="dogImg">
+                </div>
+            </div>
         </div>
     </div>
-    <script 
+    <script src="data.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

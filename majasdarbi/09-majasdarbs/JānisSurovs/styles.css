@@ -1,0 +1,19 @@
+.form-floating{
+    margin-top: 1.5rem;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+.dogImg{
+    padding-top: 2rem;
+}
+.form-select{
+    text-align: center;
+    font-weight: bold;
+}
+
+.container{
+    max-width: 50%;
+}
