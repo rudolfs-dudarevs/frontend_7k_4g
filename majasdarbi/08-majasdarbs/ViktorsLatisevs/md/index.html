@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Javascript Validation</title>
-    <meta charset="UTF-8"/>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form 
-        id="form"
-        action=""
-        method="get"
-        autocomplete="off"> 
+    <form id="form"> 
         <div>
             <label for="text">Teksta lauks</label>
             <input 
                 type="text" 
-                id="textbox"
+                id="text"
                 required
             />
         </div>
@@ -24,23 +18,22 @@
             <label for="email">Epasta lauks</label>
             <input 
                 type="email" 
-                id="email"
-                pattern=".+@gmail.com"
-                title="Epasta laukam jasatur @ un domena vardam jabut gmail.com"  
+                id="email" 
+                pattern=".+@gmail\.com"
+                title="Epasta laukam jasatur @ un domena vardam jabut gmail.com"   
                 required
             />
         </div>
 
         <div>
-            <label for="minxmax">Teksta lauks ar Min un Max garumu</label>
+            <label for="minmaxtext">Teksta lauks ar Min un Max garumu</label>
             <input 
                 type="text" 
-                id="minmax" 
-                title="minxmax"
-                minlength="5"
+                id="minmaxtext" 
+                minlength="5" 
                 maxlength="10"
-                title="Teksta lauka garums ir no 5 lidz 10 simboliem"  
-                  
+                title="Teksta lauka garums ir no 5 lidz 10 simboliem" 
+                required
             />
         </div>
       
@@ -48,21 +41,21 @@
             <label for="password">Parole 1 (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
             <input 
                 type="password" 
-                id="password" 
+                id="password1" 
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
-                oninvalid="this.setCustomValidity('Jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars')"
-                required  
+                required
+                oninvalid="this.setCustomValidity('Jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars')"   
             />
         </div>
             
         <div>
-            <label for="passwordcombined">Parole 2 (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <label for="password2">Parole 2 (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
             <input 
                 type="password" 
-                id="passwordcombined" 
-                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                id="password2" 
                 minlength="8"
-                title="Jāsatur vismaz 8 sumboli 1 lielais burts, 1 mazais burts un 1 cipars un" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                title="Jāsatur vismaz 8 sumboli 1 lielais burts, 1 mazais burts un 1 cipars"
                 required
             />
         </div>
@@ -73,21 +66,22 @@
                 type="week" 
                 name="week" 
                 id="week"
-                min="2022-W18"
+                min="2022-W18" 
                 max="2022-W26"
+                title="Jāizvēlas nedēļa no W18 līdz W26"
                 required
             />
         </div>
 
         <div>
-            <label for="appt">Laiks</label>
-
+            <label for="time">Laiks</label>
             <input 
                 type="time" 
                 id="time" 
                 name="time"
-                min="9:00"
+                min="09:00" 
                 max="18:00"
+                title="Jāizvēlas laiks no 9:00 līdz 18:00"
                 required
             />
         </div>
@@ -95,17 +89,20 @@
         </hr>
 
         <div>
-            <label for="po-number">ZIP : </label>
+            <label for="zip">ZIP : </label>
             <input 
                 type="text" 
-                id="ZIP"
+                id="zip"
+                required
             />
-            <label for="country">Valsts : </label>
-            <select id="country">
+
+
+            <label for="Country">Valsts : </label>
+            <select id="Country">
               <option value="lv">Latvia</option>
-              <option value="ee">Estonia</option>
-              <option value="lt">Lithuania</option>
-              <option value="ru">Russia</option>
+              <option value="ee">Igaunija</option>
+              <option value="lt">:Lietuva</option>
+              <option value="ru">Krievija</option>
             </select>
         </div>
 
