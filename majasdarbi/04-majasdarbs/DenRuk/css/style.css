@@ -1,0 +1,17 @@
+html,
+body,
+.red {
+    width: 1200px;	height: 200px; /* Размеры */
+    background: red; /* Цвет фона */
+    outline: 8px solid rgb(181, 185, 64); /* Чёрная рамка */
+}
+.yellow {
+    width: 1200px;	height: 200px; /* Размеры */
+    background: yellow; /* Цвет фона */
+    outline: 8px solid rgb(181, 185, 64); /* Чёрная рамка */
+}
+.green {
+    width: 1200px;	height: 200px; /* Размеры */
+    background: green; /* Цвет фона */
+    outline: 8px solid rgb(181, 185, 64); /* Чёрная рамка */
+}
