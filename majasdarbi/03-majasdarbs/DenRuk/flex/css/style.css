@@ -1,0 +1,16 @@
+{
+    margin: 0
+}
+
+html, body {
+    height: 100%
+
+}
+
+.conteiner {
+    display: flex;
+}
+
+.conteiner div {
+    widht: 100px;
+}
