@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root {
+    --operator:#af2e1b;
+    --key-color:#bfa07a;
+    --operator-hover:#cc6324;
+    --sand-color:#d9c3b0;
+    --secondary-color:#3b4b59;
+    --primary-color: #D8D9D0;
+
+}
+
+
+[data-theme="dark"] {
+    --operator: #cc6324;
+    --key-color:#bfa07a;
+    --operator-hover:#af2e1b;
+    --sand-color:#d9c3b0;
+    --secondary-color:#D8D9D0;
+    --primary-color: #3b4b59;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    font-family: 'Questrial', sans-serif;
+    color: var(--secondary-color);
+}
+
+/* Gaisas un tumsas temas parsledzejs*/
+.switch {
+    position: relative;
+    top: 7px; 
+    left: -149px;
+    display: flex;
+    width: 60px;
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 34px;
+    border-color: var(--secondary-color);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--operator);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--key-color);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 10px var(--key-color);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(36px);
+    -ms-transform: translateX(36px);
+    transform: translateX(36px);
+  }
+
+/* Kalkulatora konteiners */
+.container {
+    display:flex;
+    width: 375px;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    border: solid var(--secondary-color);
+    border-radius: 10px;
+    border-width: 2px;
+    /* background:white;
+    opacity: 0.4; */
+    /* backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+/* Kalkulators */
+.calculator {
+    display: flex;
+    flex-flow:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ekrans 1 - darbibu atspogulosanai */
+.screen1 {
+    height: 50px;
+    width: 360px;
+    text-align: right;
+    overflow-wrap: break-word;
+    font-size: 1.8rem;
+}
+
+/* Ekrans 2 - rezultāta atspogulosanai */
+.screen2 {
+    height: 90px;
+    width: 360px;
+    text-align: right;
+    font-size: 2.6rem;
+    overflow-wrap: break-word;
+}
+
+/* Pogas */
+.keys {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    margin-bottom: 7px;
+}
+
+.key {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.8rem
+}
+
+.key:hover {
+    background-color: #bfa07a;
+}
+
+.key.operator {
+    background-color: var(--operator);
+    color: var(--primary-color);
+}
+
+.key.operator:hover{
+    background-color: var(--operator-hover);
+}
+
+.key.equal {
+    background-color: var(--operator);
+    color: var(--primary-color);
+}
+
+.key.equal:hover{
+    background-color: var(--operator-hover);
+}
+
+#zero {
+    grid-column: span 2;
+}
