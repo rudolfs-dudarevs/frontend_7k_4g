@@ -1,0 +1,127 @@
+/*-Close button - */
+
+.close-btn {
+    width: 50px;
+    height: 50px;
+    margin: 30px auto 70px 5px;
+    transition: all .2s ease-in-out;
+    z-index: 100;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .close-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.close-btn:hover {
+    transform: scale(1.5);
+}
+
+/*- Slide-in Text styles - */
+
+.prog-time {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.prog-place {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--overlay-color);
+    margin-left: 10px;
+}
+
+.prog-event {
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    line-height: 1.5em;
+}
+
+@media only screen and (max-width: 800px) {
+    .prog-time {
+        font-size: 20px;
+    }
+
+    .prog-place {
+        font-size: 20px;
+    }
+
+    .prog-event {
+        font-size: 24px;
+    }
+}
+
+/*-  Panels Style -*/
+
+/* Common panel style */
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+/* panel content (only for animation delay after open) */
+.panel__content {
+    will-change: margin-top;
+    transition: opacity 0.3s linear 2s;
+    padding: 70px;
+    margin-top: -5%;
+    background-color: var(--brand-color-red);
+    transition: all 800ms;
+}
+
+@media only screen and (max-width: 1000px) {
+    .panel__content {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+/* Panel content animation after open */
+.panel:target .panel__content {
+    opacity: 1;
+    margin-top: 0;
+}
+
+
+/*  Specific panel "Fade" effect */
+/* •••••••••••••••••••••••••••••••• */
+
+.panel#fade-programm {
+    background-color: var(--overlay-color);
+    opacity: 0;
+    transition: all 800ms;
+    pointer-events: none;
+}
+
+.panel#fade-programm:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.panel#fade-ticket {
+    background-color: var(--overlay-color);
+    opacity: 0;
+    transition: all 800ms;
+    pointer-events: none;
+}
+
+.panel#fade-ticket:target {
+    opacity: 1;
+    pointer-events: auto;
+}

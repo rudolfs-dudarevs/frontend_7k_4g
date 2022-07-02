@@ -1,0 +1,67 @@
+.count-tittle {
+  margin: 20px 0 0 0;
+}
+
+.countdown {
+  width: 800px;
+  max-width: 500px;
+}
+
+.countdown-container {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 2px;
+  margin-left: -15px;
+}
+
+.days-container,
+.hours-container,
+.minutes-container,
+.seconds-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 100px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .days-container,
+  .hours-container,
+  .minutes-container,
+  .seconds-container {
+    width: 70px;
+    height: 70px;
+    font-size: 10px;
+  }
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  font-size: 2.5em;
+  margin: 20px 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.days-label,
+.hours-label,
+.minutes-label,
+.seconds-label {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .countdown-container {
+    max-width: 90%;
+  }
+}

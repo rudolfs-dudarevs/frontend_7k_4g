@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Galadarbs - Māris Pidiks</title>
+</head>
+
+<body>
+
+    <div class="container-fluid hero d-flex flex-column justify-content-between">
+
+<!-- HEADER -->
+
+        <div class="row row-header d-flex flex-row justify-content-center align-items-center">
+            <div class="col-5 col-md-2 d-flex justify-content-start align-items-center">
+                <div class="weatherapp"></div>
+            </div>
+
+            <div class="col-1 col-md-6 d-flex justify-content-start">
+            </div>
+
+            <div class="col-6 col-md-4 d-flex flex-column align-items-center">
+
+                <h5 class="ticket-tip">PIRKT BIĻETI !</h5>
+
+                <a class="ticket" href="#fade-ticket">
+                    <img src="./img/plus.svg" alt="Pirkt!"></a>
+            </div>
+        </div>
+
+<!-- TITTLE CONTENT -->
+
+        <div class="row row-content d-flex flex-row align-items-start">
+
+            <div id="aside" class="col-2">
+            </div>
+
+            <!-- </div> -->
+
+            <div class="col-10 col-xs-12 tittle-col d-flex flex-column justify-content-center">
+                <div class="inner-content">
+
+                    <a href="#"><img class="sv-logo" src="./img/Svetku-logo.png" alt="Svētku logo"></a>
+
+                    <h2>16. jūlijā</h2>
+
+                    <h1 class="headline-container">
+                        <p data-js="reveal">MADONAS</p>
+                        <p data-js="reveal">PILSĒTAS</p>
+                        <p data-js="reveal">SVĒTKI</p>
+                    </h1>
+
+                    <div class="desktp-menu">
+                        <a class="swipe-fill swipe-fill--left" href="#fade-programm">PROGRAMMA</a>
+                    </div>
+
+
+<!-- COUNTDOWN -->
+
+                    <h3 class="count-tittle">Līdz svētkiem</h3>
+
+                    <div class="countdown">
+                        <section class="countdown-container">
+                            <div class="days-container">
+                                <div class="days"></div>
+                                <div class="days-label">DIENAS</div>
+                            </div>
+
+                            <div class="hours-container">
+                                <div class="hours"></div>
+                                <div class="hours-label">STUNDAS</div>
+                            </div>
+
+                            <div class="minutes-container">
+                                <div class="minutes"></div>
+                                <div class="minutes-label">MINŪTES</div>
+                            </div>
+
+                            <div class="seconds-container">
+                                <div class="seconds"></div>
+                                <div class="seconds-label">SEKUNDES</div>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+<!-- FOOTER-->
+
+        <div class="row row-footer">
+
+            <div class="row d-flex flex-row">
+                <div class="col-12 d-flex flex-row justify-content-center align-items-center">
+                    <a class="alink" href="#">TWITTER</a>//
+                    <a class="alink" href="#">FACEBOOK</a>//
+                    <a class="alink" href="#">INSTAGRAMM</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+<!-- SLIDEIN PANEL -->
+
+    <div class="panel" id="fade-programm">
+        <div class="panel__content">
+            <a href="#home"><img class="close-btn" src="img/close.svg" alt="Aizvērt" class="mb-4 sv-logo"></a>
+
+            <p class="prog-time">8.00 <span class="prog-place">Parka kalnā</span></p>
+            <p class="prog-event">Jogas nodarbības kopā ar DabaYoga</p>
+            <p class="prog-time">10.00 <span class="prog-place">Priežu kalnā</span></p>
+            <p class="prog-event">Aktivitāšu parks bērniem</p>
+            <p class="prog-time">11.00 <span class="prog-place">Saieta laukumā</span></p>
+            <p class="prog-event">StreetFood festivāls</p>
+            <p class="prog-time">11.00 <span class="prog-place">Mūzikas skvērā</span></p>
+            <p class="prog-event">Elitas Patmalnieces radošā studija Madonā</p>
+            <p class="prog-time">13.00 <span class="prog-place">Smeceres sils</span></p>
+            <p class="prog-event">Baltijas un Latvijas enduro čempionāts</p>
+            <p class="prog-time">19.00 <span class="prog-place">Madonas pilsētas estrādē</span></p>
+            <p class="prog-event">Vidzemes pūtēju orķestru svētku koncerts</p>
+            <p class="prog-time">21.00 <span class="prog-place">Saieta laukumā</span></p>
+            <p class="prog-event">Svētku ballīte ar Sudden Lights, Musiqq, Bruģis, DJ Jānis Balodis</p>
+
+        </div>
+    </div>
+
+    <div class="panel" id="fade-ticket">
+        <div class="panel__content">
+            <a href="#home"><img class="close-btn" src="img/close.svg" alt="Aizvērt" class="mb-4 sv-logo"></a>
+
+            <form action="">
+                <fieldset>
+                    <label>Vārds, uzvārds</label>
+                    <input type="text" name="name" id="name" placeholder="Pilns vārds, uzvārds">
+                    <label for="email">Epasts</label>
+                    <input type="email" name="email" id="email" placeholder="Epasta adrese">
+                    <label for="passes">Bilešu skaits</label>
+                    <select name="passes" id="tickets-count">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </fieldset>
+                <button id="submit-btn">Pirkt</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
